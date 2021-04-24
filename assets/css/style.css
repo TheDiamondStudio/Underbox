@@ -1648,7 +1648,7 @@ hr {
 }
 @media (max-width: 636px) {
     .btn {
-        font-size: 15px;
+        font-size: 18px;
     }
     iframe {
         display: none;
