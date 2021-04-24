@@ -80,6 +80,20 @@ hr {
 }
 
 .intro__title {
+    text-shadow: 0 1px 0 #844ba3,
+	0 2px 0 #844ba3,
+	0 3px 0 #844ba3,
+	0 4px 0 #844ba3,
+	0 5px 0 #844ba3,
+	0 6px 0 #844ba3,
+	0 7px 0 #844ba3,
+	0 8px 0 #844ba3,
+	0 0 5px rgba(0,0,0,.05),
+	0 1px 3px rgba(0,0,0,.2),
+	0 3px 5px rgba(0,0,0,.2),
+	0 5px 10px rgba(0,0,0,.2),
+	0 10px 10px rgba(0,0,0,.2),
+	0 20px 20px rgba(0,0,0,.3);
     font-family: 'Montserrat', Black;
     text-align: center;
     color:	#9952be;
@@ -100,11 +114,25 @@ hr {
 }
 
 .intro__suptitle {
+    text-shadow: 0 1px 0 #714688,
+	0 2px 0 #714688,
+	0 3px 0 #714688,
+	0 4px 0 #714688,
+	0 5px 0 #714688,
+	0 6px 0 #714688,
+	0 7px 0 #714688,
+	0 8px 0 #714688,
+	0 0 5px rgba(0,0,0,.05),
+	0 1px 3px rgba(0,0,0,.2),
+	0 3px 5px rgba(0,0,0,.2),
+	0 5px 10px rgba(0,0,0,.2),
+	0 10px 10px rgba(0,0,0,.2),
+	0 20px 20px rgba(0,0,0,.3);
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
     font-size: 65px;
-    color: #754d8a;
+    color: #9053b1;
 }
 
 
