@@ -1480,7 +1480,9 @@ hr {
 }
 
 @media (max-width: 770px) {
-
+    .btn {
+        font-size: 25px;
+    }
     /* Intro */
     .intro {
         min-height: 650px;
@@ -1636,6 +1638,9 @@ hr {
 
 
 @media (max-width: 636px) {
+    .btn {
+        font-size: 15px;
+    }
     iframe {
         display: none;
     }
@@ -1650,7 +1655,7 @@ hr {
 
     .intro__title {
         margin: auto;
-        font-size: 50px;
+        font-size: 55px;
     }
 
     /* Section */
