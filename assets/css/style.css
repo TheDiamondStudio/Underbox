@@ -80,6 +80,7 @@ hr {
 }
 
 .intro__title {
+    transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
     text-shadow: 0 1px 0 #844ba3,
 	0 2px 0 #844ba3,
 	0 3px 0 #844ba3,
@@ -114,6 +115,7 @@ hr {
 }
 
 .intro__suptitle {
+    transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
     text-shadow: 0 1px 0 #714688,
 	0 2px 0 #714688,
 	0 3px 0 #714688,
@@ -1374,7 +1376,7 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 55px;
+        font-size: 65px;
     }
 
     .intro__title {
@@ -1393,11 +1395,11 @@ hr {
     }
     /* Intro */
     .intro__suptitle {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .intro__title {
-        font-size: 100px;
+        font-size: 110px;
     }
 
     /* Stat */
@@ -1636,7 +1638,14 @@ hr {
     }
 }
 
-
+@media (max-width: 688px) {
+    .intro__title {
+        font-size: 100px;
+    }
+    .intro__suptitle {
+        font-size: 46px;
+    }
+}
 @media (max-width: 636px) {
     .btn {
         font-size: 15px;
