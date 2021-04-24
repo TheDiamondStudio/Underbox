@@ -68,7 +68,7 @@ hr {
     min-height: 820px;
     position: relative;
 
-    background: url("../images/Home.png") center no-repeat;
+    background: url("../images/intro.png") center no-repeat;
     -webkit-background-size: cover;
 }
 .intro__inner {
