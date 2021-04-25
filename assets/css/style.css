@@ -18,7 +18,6 @@
 ⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠒⠦⠤⢤⣄⣀⣠⠤⢿⣶⣶⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀
 ⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠁⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣤⣀⣀⣀⣀⣀⣀⣀⣤⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀*/
-
 @font-face {
     font-family: "Determination Mono(RUS BY LYAJK";
     src: url("assets/fonts/10894.otf");
@@ -46,6 +45,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+.translate {
+    border: none;
+    background: transparent;
+}
+
 iframe {
     display: block;
     margin-left: auto;
@@ -334,6 +338,29 @@ hr {
 
 
 /* Button */
+.btn_lang {
+    z-index: 5000;
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid #fff;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    color: #9952be;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+
+}
+
+.btn_lang:hover {
+    background-color: #fff;
+    color: #b169d8;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
+}
+
 .btn {
     z-index: 5000;
     display: inline-block;
@@ -1395,7 +1422,7 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 65px;
+        font-size: 60px;
     }
 
     .intro__title {
@@ -1407,14 +1434,13 @@ hr {
         font-size: 20px;
     }
 }
-
 @media (max-width: 990px) {
     .header__logo {
         font-size: 30px;
     }
     /* Intro */
     .intro__suptitle {
-        font-size: 50px;
+        font-size: 46px;
     }
 
     .intro__title {
@@ -1662,7 +1688,7 @@ hr {
         font-size: 100px;
     }
     .intro__suptitle {
-        font-size: 46px;
+        font-size: 43px;
     }
 }
 @media (max-width: 636px) {
@@ -1678,7 +1704,7 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 27px;
+        font-size: 23px;
     }
 
     .intro__title {

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--
+    <!-- hello:)
 ⠀⠀⠀⠀⠀⠀⠀⣠⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⣼⡟⠉⠉⠀⠀⠀⠀⢀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⢿⣇⠀⠀⠀⠀⣠⣶⣿⠿⣿⣿⡿⣷⡀⠸⣿⣶⡀⠀⠀⠀⠀⠀
@@ -57,11 +57,12 @@
             <div class="header__logo" data-scroll="#intro" data-aos="fade-down">UNDERBOX</div>
 
             <nav class="nav" id="nav">
-                <a class="nav__link" href="#" data-scroll="#about" data-aos="fade-down" data-aos-duration="600">Download</a>
-                <a class="nav__link" href="#" data-scroll="#services" data-aos="fade-down" data-aos-duration="750">News</a>
-                <a class="nav__link" href="#" data-scroll="#blog" data-aos="fade-down" data-aos-duration="850">Versions</a>
-                <a class="nav__link" href="#" data-scroll="#works" data-aos="fade-down" data-aos-duration="900">Feadback</a>
-
+                <a class="nav__link lang" key="download" href="#" data-scroll="#about" data-aos="fade-down" data-aos-duration="600">Download</a>
+                <a class="nav__link lang" key="news" href="#" data-scroll="#services" data-aos="fade-down" data-aos-duration="750">News</a>
+                <a class="nav__link lang" key="versions" href="#" data-scroll="#blog" data-aos="fade-down" data-aos-duration="850">Versions</a>
+                <a class="nav__link lang" key="feadback" href="#" data-scroll="#works" data-aos="fade-down" data-aos-duration="900">Feadback</a>
+                <li class="nav__link" href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="en" class="translate btn_lang">EN</button></li>
+                <li class="nav__link" href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="ru" class="translate btn_lang">RU</button></li>
                 </a>
                 </a>
             </nav>
@@ -80,12 +81,12 @@
     <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
-                <h2 class="intro__suptitle" data-aos="fade-up">New Incredibox mod</h2>
+                <h2 class="intro__suptitle lang" data-aos="fade-up" key="sup">New Incredibox mod</h2>
                 <h1 class="intro__title" data-aos="fade-up"
                 data-aos-duration="600">UNDERBOX</h1>
 
 
-                <button class="btn" onclick="Swal.fire('sus😁')"  data-aos="fade-up" data-aos-duration="650">Download</button>
+                <button class="btn lang" key='download' onclick="Swal.fire('sus😁')"  data-aos="fade-up" data-aos-duration="650">Download</button>
             </div>
         </div>
 
@@ -131,7 +132,7 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/app.js"></script>
 
