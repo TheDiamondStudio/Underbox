@@ -247,6 +247,7 @@ hr {
 }
 
 .header.fixed {
+    animation: activ 0.9s 1;
     padding: 10px 0;
 
     background-color: #000;
@@ -284,10 +285,6 @@ hr {
 
 
 /* Nav */
-
-.langu + .sub::before {
-    display: none;
-}
 .nav {
     list-style: none;
     font-size: 20px;
@@ -308,6 +305,7 @@ hr {
 }
 
 .nav__link:after {
+    
     content: "";
     display: block;
     width: 100%;
@@ -386,6 +384,7 @@ hr {
 
 .nav-toggle__item:before,
 .nav-toggle__item:after {
+    
     content: "";
     width: 100%;
     height: 3px;
@@ -1638,8 +1637,14 @@ hr {
     .nav.active {
         display: block;
         transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+        
     }
-
+@keyframes ac {
+    100% {
+        transform: translateY(-600px);
+    }
+    
+}
     .nav__link {
         display: block;
         margin: 0;
