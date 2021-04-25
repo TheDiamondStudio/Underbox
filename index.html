@@ -59,15 +59,15 @@
                 <a class="nav__link lang" key="news" href="#" data-scroll="#services" data-aos="fade-down" data-aos-duration="750">News</a>
                 <a class="nav__link lang" key="versions" href="#" data-scroll="#blog" data-aos="fade-down" data-aos-duration="850">Versions</a>
                 <a class="nav__link lang" key='feedback' data-scroll="#works" data-aos="fade-down" data-aos-duration="900">Feedback</a>
-                <a class="nav__link lang md-trigger" key="язык" onclick="location.hash ='zatemnenie'" data-aos-duration="950">Language</a>
+                <a class="nav__link lang md-trigger" key="язык" onclick="location.hash ='zatemnenie'" data-aos="fade-down" data-aos-duration="950">Language</a>
                 <style>
                     #zatemnenie:target {
                     display: block;
                     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
                     }
-                    
                     #zatemnenie {
-                    background: rgba(102, 102, 102, 0.68);
+                    opacity: 1;
+                    background: rgba(68, 68, 68, 0.336);
                     width: 100%;
                     height: 100%;
                     position: fixed;
@@ -76,32 +76,49 @@
                     display: none;
                     z-index: 9999999999;
                     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+                    animation: zatem 0.4s 1;
                     }
-                    .window p {
-                        font-family: 'Montserrat', sans-serif;
-                    }
-
                     .window {
+                    opacity: 1;
                     font-size: 25px;
                     list-style:none;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     width: 400px;
-                    border: 1px solid #cecece;
                     padding: 50px;
                     transform: translate(-50%,-50%);
-                    background-color: #fafafa;
+                    background-color: #fafafa86;
                     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+                    animation: win 0.4s 1;
                     }
                     
                     a.close_window {
                     text-decoration:none;
                     position: absolute;
-                    right: 10px;
+                    right: 15px;
                     top: 4px;
                     border: none;
-                    transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+                    transition: all 0.3s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+                    }
+                    a.close_window:hover {
+                        font-size: 35px;
+                        color: rgb(255, 118, 118);
+                    }
+                    @keyframes win {
+                        0%{
+                            top: 0%;
+                            left: 50%;
+                        }
+                    }
+                    @keyframes zatem {
+                        0% {
+                            
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
                     }
                     </style>
             </a>
@@ -119,12 +136,12 @@
     <div id="zatemnenie">
         <div class="window">
             <a href="#close_window" class="close_window">✖</a>
-            <a class="sel lang" key="sel">Select a language</a>
+            <a class="sel lang" key="sel" >Select a language</a>
             <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="en" class="translate btn_lang" style="margin-top: 10px;">English</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="ru" class="translate btn_lang" style="margin-top: 10px;">Russian</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="fr" class="translate btn_lang" style="margin-top: 10px;">French</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="ar" class="translate btn_lang" style="margin-top: 10px;">Arabic</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="jp" class="translate btn_lang" style="margin-top: 10px;">Japanese</button></li>
+            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="ru" class="translate btn_lang" style="margin-top: 10px;">Русский</button></li>
+            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="fr" class="translate btn_lang" style="margin-top: 10px;">Français</button></li>
+            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="ar" class="translate btn_lang" style="margin-top: 10px;">العربية</button></li>
+            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="jp" class="translate btn_lang" style="margin-top: 10px;">日本語</button></li>
         </Div>
         </div>
     <!-- Intro -->
