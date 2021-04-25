@@ -45,6 +45,113 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 630px;
+    min-width: 320px;
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+   }
+    
+   .md-show {
+    visibility: visible;
+   }
+    
+   .md-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    background: rgba(143,27,15,0.8);
+    transition: all 0.3s;
+   }
+    
+   .md-show ~ .md-overlay {
+    opacity: 1;
+    visibility: visible;
+   }
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   10
+   11
+   12
+   13
+   14
+   15
+   16
+   17
+   18
+   19
+   20
+   21
+   22
+   23
+   24
+   25
+   26
+   27
+   28
+   29
+   30
+   31
+   32
+   33
+   34
+   35
+   .md-modal {
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       width: 50%;
+       max-width: 630px;
+       min-width: 320px;
+       height: auto;
+       z-index: 2000;
+       visibility: hidden;
+       backface-visibility: hidden;
+       transform: translateX(-50%) translateY(-50%);
+   }
+    
+   .md-show {
+       visibility: visible;
+   }
+    
+   .md-overlay {
+       position: fixed;
+       width: 100%;
+       height: 100%;
+       visibility: hidden;
+       top: 0;
+       left: 0;
+       z-index: 1000;
+       opacity: 0;
+       background: rgba(143,27,15,0.8);
+       transition: all 0.3s;
+   }
+    
+   .md-show ~ .md-overlay {
+       opacity: 1;
+       visibility: visible;
+   }
+   
 .translate {
     border: none;
     background: transparent;
@@ -65,8 +172,78 @@ hr {
     border: 0;
     background-color: #e5e5e5;
 }
-
-
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
 /* Page */
 .page {
     overflow: hidden;
@@ -156,7 +333,7 @@ hr {
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
-    font-size: 65px;
+    font-size: 61px;
     color: #9053b1;
 }
 
@@ -207,12 +384,16 @@ hr {
 
 
 /* Nav */
+
+.langu + .sub::before {
+    display: none;
+}
 .nav {
+    list-style: none;
     font-size: 20px;
     text-transform: uppercase;
     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
 }
-
 .nav__link {
     display: inline-block;
     vertical-align: top;
@@ -342,11 +523,11 @@ hr {
     z-index: 5000;
     display: inline-block;
     vertical-align: top;
-
+    padding: 8px 30px;
     font-family: 'Montserrat', sans-serif;
     border: 3px solid #fff;
     background-color: #fff;
-    font-size: 15px;
+    font-size: 30px;
     font-weight: 700;
     color: #9952be;
     text-transform: uppercase;
@@ -375,7 +556,6 @@ hr {
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
-
 }
 
 .btn:hover {
@@ -1422,7 +1602,7 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 60px;
+        font-size: 56px;
     }
 
     .intro__title {
@@ -1440,7 +1620,7 @@ hr {
     }
     /* Intro */
     .intro__suptitle {
-        font-size: 46px;
+        font-size: 43px;
     }
 
     .intro__title {
@@ -1688,7 +1868,7 @@ hr {
         font-size: 100px;
     }
     .intro__suptitle {
-        font-size: 43px;
+        font-size: 39px;
     }
 }
 @media (max-width: 636px) {
@@ -1704,7 +1884,7 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .intro__title {
