@@ -77,6 +77,7 @@
                     z-index: 9999999999;
                     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
                     animation: zatem 0.4s 1;
+
                     }
                     .window {
                     opacity: 1;
@@ -91,23 +92,17 @@
                     background-color: #fafaface;
                     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
                     animation: win 0.4s 1;
+                    
                     }
                     
                     a.close_window {
                     text-decoration:none;
                     position: absolute;
-                    right: 15px;
-                    top: 4px;
+                    right: 45px;
+                    top: 15px;
                     border: none;
                     transition: all 0.2s cubic-bezier(0.98, 0.01, 0.21, 1.01);
-                    }
-                    a.close_window:hover {
-                        font-size: 35px;
-                        color: rgb(0, 0, 0);
-                    }
-                    a.close_window:focus {
-                        font-size: 35px;
-                        color: rgb(0, 0, 0);
+                    
                     }
                     @keyframes win {
                         0%{
@@ -143,9 +138,11 @@
             <a class="sel lang" key="sel" >Select a language</a>
             <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="en" class="translate btn_lang" style="margin-top: 10px;">English</button></li>
             <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="ru" class="translate btn_lang" style="margin-top: 10px;">Русский</button></li>
+            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="sp" class="translate btn_lang" style="margin-top: 10px;">Spanish</button></li>
             <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="fr" class="translate btn_lang" style="margin-top: 10px;">Français</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="ar" class="translate btn_lang" style="margin-top: 10px;">العربية</button></li>
             <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="jp" class="translate btn_lang" style="margin-top: 10px;">日本語</button></li>
+           
+            
         </Div>
         </div>
     <!-- Intro -->
@@ -188,6 +185,14 @@
 
         </div>
     </section>
+    <section class="section  section--store"></section>
+    <div class="container"></div>
+    <div class="section__header">
+        <h3 class="section__suptitle lang" key='buy'  data-aos="fade-up">Buy original Incredibox</h3>
+        <h2 class="section__title lang" key='steam' data-aos="fade-up" data-aos-duration="600">On Steam</h2>
+    </div>
+
+    <iframe data-aos="fade-up" data-aos-duration="600" src="https://store.steampowered.com/widget/1545450/" frameborder="0" width="646" height="190"></iframe>
 
             </div><!-- /.footer__inner -->
 

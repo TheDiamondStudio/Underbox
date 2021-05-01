@@ -227,7 +227,7 @@ hr {
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
-    font-size: 61px;
+    font-size: 50px;
     color: #9053b1;
 }
 
@@ -1501,7 +1501,7 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 56px;
+        font-size: 47px;
     }
 
     .intro__title {
@@ -1519,7 +1519,7 @@ hr {
     }
     /* Intro */
     .intro__suptitle {
-        font-size: 43px;
+        font-size: 39px;
     }
 
     .intro__title {
@@ -1774,7 +1774,7 @@ hr {
         font-size: 100px;
     }
     .intro__suptitle {
-        font-size: 39px;
+        font-size: 35px;
     }
 }
 @media (max-width: 636px) {
@@ -1790,7 +1790,7 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .intro__title {
