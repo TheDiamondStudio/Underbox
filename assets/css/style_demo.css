@@ -55,7 +55,7 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 hr {
     display: block;
@@ -1513,9 +1513,26 @@ hr {
     color: #8c69ec;
     text-decoration: none;
 }
-
-
-
+@media (max-height: 100000px) {
+    iframe {
+        height: 1080px;
+    }
+}
+@media (max-height: 1080px) {
+    iframe {
+        height: 1080px;
+    }
+}
+@media (max-height: 990px) {
+    iframe {
+        height: 600px;
+    }
+}
+@media (max-height: 918px) {
+    iframe {
+        height: 500px;
+    }
+}
 
 @media (max-width: 1230px) {
 
