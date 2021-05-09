@@ -55,7 +55,7 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 55px;
+    margin-top: 51px;
 }
 hr {
     display: block;
@@ -1551,7 +1551,10 @@ hr {
 }
 @media (max-width: 990px) {
     .header__logo {
-        font-size: 40px;
+        font-size: 30px;
+    }
+    iframe {
+        margin-top: 47px;
     }
     /* Intro */
     .intro__suptitle {
@@ -1679,6 +1682,7 @@ hr {
 
     .nav-toggle {
         display: block;
+        margin-top: -10px;
     }
 
 
@@ -1959,9 +1963,6 @@ hr {
     .subscribe__input,
     .subscribe__btn {
         width: 100%;
-    }
-    .header__logo {
-        font-size: 40px;
     }
 
 }
