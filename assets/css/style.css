@@ -235,7 +235,7 @@ hr {
 /* Header */
 .header {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 10px;
 
     position: absolute;
     top: 0;
@@ -243,11 +243,20 @@ hr {
     right: 0;
     z-index: 1000;
     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
 
 }
+/* 
+  Define this in your CSS 
+  .ease-inTransition = Replace it by the name you want to give your transition
+*/
 
 .header.fixed {
-    animation: activ 0.9s 1;
+    animation: activ 0.8s 1;
     padding: 10px 0;
 
     background-color: rgb(0, 0, 0);
@@ -264,7 +273,7 @@ hr {
 }
 @keyframes activ {
     0%{
-        transform: translateY(-500px);
+		opacity: 0;
     }
 }
 .header.active {
