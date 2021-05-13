@@ -266,14 +266,13 @@ hr {
     top: 0;
     left: 0;
     right: 0;
-
     transform: translate3d(0, 0, 0);
     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
 
 }
 @keyframes activ {
     0%{
-		opacity: 1;
+		transform: translateY(-500px);
     }
 }
 .header.active {
