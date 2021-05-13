@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--  -->
+    <!-- https://raw.githubusercontent.com/TheDiamondStudio/Underbox/main/abc_123_a.mp3 -->
 <head>
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/wow.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -111,11 +114,11 @@
         <div class="window">
             <a href="#close_window" class="close_window">✖</a>
             <a class="sel lang" key="sel" >Select a language</a>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="en" class="translate btn_lang" style="margin-top: 10px;">English</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="ru" class="translate btn_lang" style="margin-top: 10px;">Русский</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="sp" class="translate btn_lang" style="margin-top: 10px;">Spanish</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="fr" class="translate btn_lang" style="margin-top: 10px;">Français</button></li>
-            <li href="#" data-scroll="#lang" data-aos="fade-down" data-aos-duration="950"><button id="jp" class="translate btn_lang" style="margin-top: 10px;">日本語</button></li>
+            <li href="#" data-scroll="#lang"  ><button id="en" class="translate btn_lang" style="margin-top: 10px;">English</button></li>
+            <li href="#" data-scroll="#lang"  ><button id="ru" class="translate btn_lang" style="margin-top: 10px;">Русский</button></li>
+            <li href="#" data-scroll="#lang"  ><button id="sp" class="translate btn_lang" style="margin-top: 10px;">Spanish</button></li>
+            <li href="#" data-scroll="#lang"  ><button id="fr" class="translate btn_lang" style="margin-top: 10px;">Français</button></li>
+            <li href="#" data-scroll="#lang"  ><button id="jp" class="translate btn_lang" style="margin-top: 10px;">日本語</button></li>
            
             
         </Div>
@@ -136,11 +139,11 @@
     <!-- Devices -->
 <div class="youtube_v">
     <div class="section__header">
-        <h3 class="section__suptitle lang animate__animated animate__fadeInUp" key="1" style="margin-top: 50px;">The first</h3>
-        <h2 class="section__title animate__animated animate__fadeInUp">Ruins v1 trailer</h2>
-        <a class="btn_youtube lang animate__animated animate__fadeInUp" key="look" href="https://www.youtube.com/watch?v=bPiF54UaroI">Look</a>
+        <h3 class="section__suptitle lang" data-aos="fade-up" key="1" style="margin-top: 50px;">The first</h3>
+        <h2 class="section__title" data-aos="fade-up">Ruins v1 trailer</h2>
+        <a class="btn_youtube lang animate__animated animate__fadeInUp" data-aos="fade-up" key="look" href="https://www.youtube.com/watch?v=bPiF54UaroI">Look</a>
     </div>
-    <div class="video_youtube" data-aos="fade-up">
+    <div class="video_youtube" data-aos="fade-up" >
         <iframe width="853" height="480" src="https://www.youtube.com/embed/bPiF54UaroI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
@@ -149,28 +152,28 @@
 
             <div class="section__header">
                 <h3 class="section__suptitle lang" key="for"  data-aos="fade-up">For Android devices</h3>
-                <h2 class="section__title lang" key="play" data-aos="fade-up" data-aos-duration="600">Play for free</h2>
+                <h2 class="section__title lang" key="play" data-aos="fade-up">Play for free</h2>
+				<a class="btn_demo lang " key="demo" href="demo.html" data-aos="fade-up">Demo</a>
             </div>
-
+                
             <div class="devices">
-                <img class="devices__item" src="assets/images/Devices/ipad_game.png" alt="" data-aos="fade-right">
+                <img class="devices__item" data-aos="fade-up" src="assets/images/Devices/ipad_game.png" alt="" "fade-right">
             </div>
-            <div class="section__header" style="top: 20px;">
-                <a class="btn_demo lang " key="demo" data-aos="fade-up" href="demo.html" >Demo</a>
+            
             </div>
             
         </div>
     </section>
-    <section class="section  section--store"></section>
+    <section class="section  section--store" ></section>
     <div class="container"></div>
     <div class="section__header">
 
         <h3 class="section__suptitle lang" key="buy"  data-aos="fade-up">Buy original Incredibox</h3>
-        <h2 class="section__title lang" key="steam" data-aos="fade-up" data-aos-duration="600">On Steam</h2>
-        <a class="btn_steam buy" key="buy2" data-aos="fade-up" href="https://store.steampowered.com/app/1545450/Incredibox/">Buy</a>
+        <h2 class="section__title lang" key="steam" data-aos="fade-up">On Steam</h2>
+        <a class="btn_steam buy" key="buy2" href="https://store.steampowered.com/app/1545450/Incredibox/" data-aos="fade-up">Buy</a>
     </div>
 
-    <iframe src="https://store.steampowered.com/widget/1545450/" frameborder="0" width="646" height="190"></iframe>
+    <iframe src="https://store.steampowered.com/widget/1545450/" frameborder="0" width="646" height="190" data-aos="fade-up"></iframe>
 
             </div><!-- /.footer__inner -->
             
@@ -189,6 +192,9 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
+            <script>
+              new WOW().init();
+              </script>
 <script>
     AOS.init();
   </script>
