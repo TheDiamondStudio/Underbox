@@ -1,7 +1,7 @@
 $(function() {
 
     var header = $("#header"),
-        introH = $("#intro").innerHeight(),
+        introH = $("#btn").innerHeight(),
         scrollOffset = $(window).scrollTop();
 
 
