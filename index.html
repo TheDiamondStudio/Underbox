@@ -29,10 +29,11 @@
             <div class="header__logo animate__animated animate__fadeInLeft" data-scroll="#intro">UNDERBOX</div>
 
             <nav class="nav" id="nav">
-                <a class="nav__link lang animate__animated animate__fadeIn" key="download" href="#" data-scroll="#about">Download</a>
+                <a class="nav__link lang animate__animated animate__fadeIn" key="download" href="download.html" >Download</a>
                 <a class="nav__link lang animate__animated animate__fadeIn" key="demo" href="demo.html">Demo</a>
+				<!--
                 <a class="nav__link lang animate__animated animate__fadeIn" key="versions" href="#" data-scroll="#blog" >Versions</a>
-                <a class="nav__link lang animate__animated animate__fadeIn" key="feedback" data-scroll="#works">Feedback</a>
+                <a class="nav__link lang animate__animated animate__fadeIn" key="feedback" data-scroll="#works">Feedback</a> -->
                 <a class="nav__link lang animate__animated animate__fadeIn" key="язык" onclick="location.hash ='zatemnenie'">Language</a>
                 <style>
                     #zatemnenie:target {
@@ -131,7 +132,7 @@
                 <h1 class="intro__title animate__animated animate__fadeInUp" >UNDERBOX</h1>
 
 
-                <button class="btn lang animate__animated animate__fadeInUp" id="btn" key="download" onclick="">Download</button>
+                <button class="btn lang animate__animated animate__fadeInUp" id="btn" key="download" onclick="javascript:window.location.href='download.html';">Download</button>
             </div>
         </div>
 
@@ -192,9 +193,6 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
-            <script>
-              new WOW().init();
-              </script>
 <script>
     AOS.init();
   </script>
