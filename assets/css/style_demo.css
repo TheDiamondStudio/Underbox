@@ -23,6 +23,7 @@
     src: url("assets/fonts/10894.otf");
    
 }
+
  @font-face {
         font-family: "Monster Friend Back";
         src: url("assets/fonts/MonsterFriendBack.otf");
@@ -197,6 +198,15 @@ h1, h2, h3, h4, h5, h6 {
 .Drive:hover {
 	
 	width: 450px;
+}
+@media (max-width: 454px){
+	.Drive {
+		width:300px;
+	}
+	.Drive:hover {
+		width: 330px;
+	}
+	}
 }
 .translate {
     border: none;

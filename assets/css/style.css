@@ -176,26 +176,13 @@ hr {
 }
 
 .intro__title {
+	 text-shadow: 0px 10px 15px rgba(141,50,185,0.5);
     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
-    text-shadow: 0 1px 0 #844ba3,
-	0 2px 0 #844ba3,
-	0 3px 0 #844ba3,
-	0 4px 0 #844ba3,
-	0 5px 0 #844ba3,
-	0 6px 0 #844ba3,
-	0 7px 0 #844ba3,
-	0 8px 0 #844ba3,
-	0 0 5px rgba(0,0,0,.05),
-	0 1px 3px rgba(0,0,0,.2),
-	0 3px 5px rgba(0,0,0,.2),
-	0 5px 10px rgba(0,0,0,.2),
-	0 10px 10px rgba(0,0,0,.2),
-	0 20px 20px rgba(0,0,0,.3);
+	font-weight: 900;
     font-family: 'Montserrat', Black;
     text-align: center;
-    color:	#9952be;
+    color:	#8d32b9;
     font-size: 150px;
-    font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
 }
@@ -211,24 +198,15 @@ hr {
 }
 
 .intro__suptitle {
+	 text-shadow: 0px 10px 15px rgba(141,50,185,0.5);
+	0px -5px 16px rgba(255,255,255,0.3);
     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
-    text-shadow: 0 1px 0 #714688,
-	0 2px 0 #714688,
-	0 3px 0 #714688,
-	0 4px 0 #714688,
-	0 5px 0 #714688,
-	0 6px 0 #714688,
-	0 0 5px rgba(0,0,0,.05),
-	0 1px 3px rgba(0,0,0,.2),
-	0 3px 5px rgba(0,0,0,.2),
-	0 5px 10px rgba(0,0,0,.2),
-	0 10px 10px rgba(0,0,0,.2),
-	0 20px 20px rgba(0,0,0,.3);
+	font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
     font-size: 60px;
-    color: #9053b1;
+    color: #8d32b9;
 }
 
 
