@@ -45,12 +45,154 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+.do {
+	animation: do 1s 1;
+}
+@keyframes do{
+	0%{
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+}
+.Ar {
+				animation: ar 1s 1;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 51px;
+                width: 100%;
+                transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+				
+            }
+@keyframes ar{
+	0%{
+		transform: translateY(-200px);
+		opacity: 0;
+	}
+}
+@media (max-width:990px) {
+					.Ar {
+					 	width: 120%;
+						transform: translateX(-160px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:770px) {
+					.Ar {
+					 	width: 150%;
+						transform: translateX(-300px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:636px) {
+					.Ar {
+					 	width: 200%;
+						transform: translateX(-600px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:569px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-750px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:543px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-680px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:498px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-650px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:474px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-610px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:445px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-570px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:417px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-520px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:383px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-480px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:355px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-450px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:334px) {
+					.Ar {
+					 	width: 250%;
+						transform: translateX(-420px);
+						margin-top: 47px;
+
+							
+					}
+				}
+@media (max-width:313px) {
+					.Ar {
+					 	width: 100%;
+						transform: translateX(0px);
+						margin-top: 47px;
+
+							
+					}
+				}
 .Drive {
 	width: 400px;
 	transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
 	display: flex;
-  margin-left: auto;
-  margin-right: auto; margin-bottom: 200px
+    margin-left: auto;
+    margin-right: auto; margin-bottom: 200px
 }
 .Drive:hover {
 	
