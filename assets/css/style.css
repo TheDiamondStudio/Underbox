@@ -176,7 +176,7 @@ hr {
 }
 
 .intro__title {
-	 text-shadow: 0px 10px 15px rgba(141,50,185,0.5);
+	text-shadow: 0px 10px 15px rgba(141,50,185,0.5);
     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
 	font-weight: 900;
     font-family: 'Montserrat', Black;
@@ -1829,12 +1829,12 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .intro__title {
         margin: auto;
-        font-size: 65px;
+        font-size: 90px;
     }
 
     /* Section */
@@ -1996,3 +1996,43 @@ hr {
 		font-size: 45px;
 	}
 }
+
+@media (max-width: 568px){
+	.intro__suptitle {
+		display: none;
+	}
+	.intro__title {
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 494px){
+	.intro__title {
+		font-size: 70px;
+	}
+}
+@media (max-width: 452px){
+	.intro__title {
+		font-size: 65px;
+	}
+
+@media (max-width: 415px){
+	.intro__title {
+		font-size: 60px;
+	}
+}
+	@media (max-width: 368px){
+	.intro__title {
+		font-size: 55px;
+	}
+	}
+	@media (max-width: 334px){
+	.intro__title {
+		font-size: 50px;
+	}
+	}
+	@media (max-width: 306px){
+	.intro__title {
+		font-size: 45px;
+	}
+	}
