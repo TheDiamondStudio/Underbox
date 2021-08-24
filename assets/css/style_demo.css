@@ -46,17 +46,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
-.do {
-	animation: do 1s 1;
-}
-@keyframes do{
-	0%{
-		transform: translateY(-100px);
-		opacity: 0;
-	}
-}
+
 .Ar {
-				animation: ar 1s 1;
+		animation: ar 1s 1;
                 display: flex;
                 margin-left: auto;
                 margin-right: auto;
