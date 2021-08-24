@@ -188,7 +188,8 @@ h1, h2, h3, h4, h5, h6 {
 							
 					}
 				}
-.Drive {
+.
+{
 	width: 400px;
 	transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
 	display: flex;
@@ -196,8 +197,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto; margin-bottom: 200px
 }
 .Drive:hover {
-	
-	width: 450px;
+	transform: scale(1.05);
+     	transition: all .15s;
 }
 @media (max-width: 454px){
 	.Drive {
