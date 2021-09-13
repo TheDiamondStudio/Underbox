@@ -225,7 +225,7 @@ hr {
     top: 0;
     left: 0;
     right: 0;
-
+    backdrop-filter: blur(20px);
 
 }
 /* 
@@ -237,7 +237,7 @@ hr {
     animation: activ 0.8s 1;
     padding: 10px 0;
 
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.5);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
     position: fixed;
@@ -246,6 +246,7 @@ hr {
     right: 0;
     transform: translate3d(0, 0, 0);
     transition: all 0.4s cubic-bezier(0.98, 0.01, 0.21, 1.01);
+	backdrop-filter: blur(20px);
 
 }
 @keyframes activ {
@@ -1645,7 +1646,7 @@ hr {
         top: 100%;
         left: 0;
 
-        background-color: #000;
+        background-color: rgb(0,0,0,0.5);
         animation: activ 0.9s 1;
 
     }
