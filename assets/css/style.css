@@ -387,6 +387,7 @@ hr {
 
 /* Button */
 .btn_lang {
+	border-radius: 8px;
     z-index: 5000;
     display: inline-block;
     vertical-align: top;
