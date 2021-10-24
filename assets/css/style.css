@@ -433,8 +433,7 @@ hr {
 }
 
 .btn_youtube {
-	    border-radius: 8
-px;
+	    border-radius: 8px;
     z-index: 5000;
     display: none;
     vertical-align: top;
@@ -456,8 +455,7 @@ px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
 }
 .btn_demo {
-	border-radius: 8
-px;
+	border-radius: 8px;
     z-index: 5000;
     display: inline-block;
     padding: 8px 30px;
@@ -478,8 +476,7 @@ px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
 }
 .btn_steam {
-	border-radius: 8
-px;
+	border-radius: 8px;
     z-index: 5000;
     display: none;
     vertical-align: top;
