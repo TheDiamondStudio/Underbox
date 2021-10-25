@@ -407,7 +407,7 @@ hr {
 
 .btn_lang:hover {
 
-    box-shadow: 0px 0px 20px rgb(0 0 0 / 32%);
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 5%);
     transform:scale(1.05);
 transition: all .15s;
 }
@@ -436,7 +436,7 @@ transition: all .15s;
 	transition: all .15s;
 	transform: scale(1.05);
     color: #b169d8;
-    box-shadow: 0px 0px 20px rgb(0 0 0 / 32%);
+
 }
 
 .btn_youtube {
