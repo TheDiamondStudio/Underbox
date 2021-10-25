@@ -406,12 +406,14 @@ hr {
 }
 
 .btn_lang:hover {
-    background-color: #fff;
-    color: #b169d8;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
+
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 32%);
+    transform:scale(1.05);
+transition: all .15s;
 }
 
 .btn {
+	cursor: pointer;
     z-index: 5000;
     display: inline-block;
     vertical-align: top;
@@ -430,8 +432,11 @@ hr {
 
 .btn:hover {
     background-color: #fff;
+	
+	transition: all .15s;
+	transform: scale(1.05);
     color: #b169d8;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 32%);
 }
 
 .btn_youtube {
@@ -454,7 +459,10 @@ hr {
 .btn_youtube:hover {
     background-color: #9952be;
     color: #FFF;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
+    transition: all .15s;
+	transform: scale(1.05);
+	background-color: #8136a9;
+	border: 3px solid #8136a9;
 }
 .btn_demo {
 	border-radius: 8px;
@@ -475,7 +483,10 @@ hr {
 .btn_demo:hover {
     background-color: #9952be;
     color: #FFF;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
+    transition: all .15s;
+	transform: scale(1.05);
+	background-color: #8136a9;
+	border: 3px solid #8136a9;
 }
 .btn_steam {
 	border-radius: 8px;
@@ -497,7 +508,10 @@ hr {
 .btn_steam:hover {
     background-color: #9952be;
     color: #FFF;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
+    transition: all .15s;
+	transform: scale(1.05);
+	background-color: #8136a9;
+	border: 3px solid #8136a9;
 }
 
 /* Slider */
