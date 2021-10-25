@@ -575,7 +575,7 @@ transition: all .15s;
     margin-bottom: 40px;
     padding-bottom: 0;
 
-    background: rgb(240, 240, 240);
+    background: #FFF;
 }
 
 .section--gray {
