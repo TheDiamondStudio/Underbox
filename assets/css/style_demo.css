@@ -2104,19 +2104,4 @@ hr {
 
 }
 
-@media (max-width: 465px) {
-	.down_from {
-		font-size: 30px;
-	}
-	.but_donate {
-		font-size: 20px;
-	}
-}
-@media (max-width: 374px) {
-	.down_from {
-		font-size: 25px;
-	}
-	.but_donate {
-		font-size: 20px;
-	}
-}
+
