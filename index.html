@@ -142,8 +142,8 @@
     <!-- Devices -->
 <div class="youtube_v">
     <div class="section__header">
-        <h3 class="section__suptitle lang" data-aos="fade-up" key="1" style="margin-top: 50px;">The first</h3>
-        <h2 class="section__title" data-aos="fade-up">Snowdin v2 Teaser</h2>
+        <h3 class="section__suptitle lang animate__animated animate__fadeInUp wow " key="1" style="margin-top: 50px;">The first</h3>
+        <h2 class="section__title animate__animated animate__fadeInUp wow ">Snowdin v2 Teaser</h2>
         <a class="btn_youtube lang animate__animated animate__fadeInUp wow" key="look" href="https://youtu.be/81I8NTpsns8">Look</a>
     </div>
     <div class="video_youtube" data-aos="fade-up" >
@@ -154,10 +154,10 @@
         <div class="container">
 
             <div class="section__header">
-                <h3 class="section__suptitle lang" key="for"  data-aos="fade-up">For Android devices</h3>
-                <h2 class="section__title lang" key="play" data-aos="fade-up">Play for free</h2>
+                <h3 class="section__suptitle lang animate__animated animate__fadeInUp wow" key="for" >For Android devices</h3>
+                <h2 class="section__title lang animate__animated animate__fadeInUp wow" key="play" >Play for free</h2>
 		                <div class="devices">
-                <img class="devices__item" data-aos="fade-up" src="assets/images/Devices/ipad_game.png" alt="Anroid device">
+                <img class="devices__item animate__animated animate__fadeInUp wow" src="assets/images/Devices/ipad_game.png" alt="Anroid device">
             </div>
 				<a class="btn_demo lang animate__animated animate__fadeInUp wow" key="demo" href="demo.html" style="margin-top: 50px;">Demo</a>
             </div>
@@ -171,22 +171,31 @@
     <div class="container"></div>
     <div class="section__header">
 
-        <h3 class="section__suptitle lang" key="buy"  data-aos="fade-up">Buy Incredibox</h3>
-        <h2 class="section__title lang" key="steam" data-aos="fade-up">On Steam</h2>
+        <h3 class="section__suptitle lang animate__animated animate__fadeInUp wow" key="buy" >Buy Incredibox</h3>
+        <h2 class="section__title lang animate__animated animate__fadeInUp wow" key="steam">On Steam</h2>
         <a class="btn_steam buy animate__animated animate__fadeInUp wow" key="buy2" href="https://store.steampowered.com/app/1545450/Incredibox/">Buy</a>
     </div>
 
-    <iframe src="https://store.steampowered.com/widget/1545450/" frameborder="0" width="646" height="190" data-aos="fade-up"></iframe>
+    <iframe src="https://store.steampowered.com/widget/1545450/" class="animate__animated animate__fadeInUp wow" frameborder="0" width="646" height="190"></iframe>
+	   
+<section class="section  section--devices">
+        <div class="container">
 
-    <a class="but_donate animate__animated animate__fadeInUp wow" href='https://www.donationalerts.com/r/diamond1895'; target="_blank">SUPPORT THE SITE</a>
+            <div class="section__header">
+                <h3 class="section__suptitle animate__animated animate__fadeInUp wow">Support the</h3>
+                <h2 class="section__title animate__animated animate__fadeInUp wow">SITE</h2>
+		<a class="but_donate" href='https://www.donationalerts.com/r/diamond1895'; target="_blank">SUPPORT</a>
+		</div>    
+	</div>
+</section>
+
+    
 <style>
   .but_donate {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     font-size: 30px;
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
     text-align: center;
     display: inline-block;
     vertical-align: top;
@@ -204,8 +213,7 @@
   }
   .but_donate:hover {
     background-color: #8136a9;
-    transform:translate(-50%, 0) scale(1.05);
-    left: 50%;
+    transform: scale(1.05);
     transition: all .15s;
   }
 </style>
