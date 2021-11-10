@@ -66,12 +66,182 @@
 </head>
 <body>
     <div id="app">
-        <div class="
-    fixed z-50 px-5 bg-lf-bg md:px-0 pin-t pin-l pin-r trans lf-header-container">
-	<header class="container mx-auto lf-header">
+        <div class="py-12 bg-lf-bg px-5 md:px-0" style="padding-left: 50px;padding-right: 50px;">
+            <div id="plugin-landing " class="lf-padding container mx-auto">
+            <div class="">
+                <div class="md:py-12">
+                <div class="container mx-auto">
+                    <div class="flex flex-col sm:flex-row items-center justify-end relative">
+                        <div class="w-full flex flex-col lg:flex-row-reverse lg:items-center">
+                            <div class="sm:px-12">
+                                <h2 class="text-4xl sm:text-5xl font-normal font-lf-bold text-grey-darkest mb-6">The Ruins V2</h2>
+                                <p class="text-lg sm:text-xl text-grey-dark leading-normal mb-6">This is the first version
+                                    Underbox, this
+                                    version is made based on
+                                    the game Undertale
+                                    location Ruins. In this
+                                    version you can see
+                                    Dummy, Frisk, Toriel,
+                                    Nabstabluk and others!</p>
+                            </div>
+                            <div class="lf-home-comparisons mb-10 lg:mb-0 relative flex-no-shrink pin-l pin-t flex items-center justify-center lg:justify-start h-full overflow-hidden">
+                                <div class="flex items-end">
+                                    <div class="mx-1 sm:mx-2">
+                                            <div class="lottie w-full rounded-lg sm:rounded-2xl shadow-md border-lf-teal mb-3" style="background: url(https://thediamondstudio.github.io/Underbox/assets/images/intro.jpg) center no-repeat;-webkit-background-size: cover;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="bg-white px-5 md:px-0">
+                <footer class="container mx-auto py-12 border-t border-grey-lighter">
+                    <div class="flex flex-col sm:flex-row sm:items-end">
+                        <div class="w-full mb-6 sm:w-1/3">
+                            <p class="text-sm text-grey-dark leading-normal">TheDiamondStudio website creator</p>
+                            <p class="text-sm text-grey-dark leading-normal">Copyright © 2021 Underobx. All rights reserved.</p>
+                        </div>
+                        <div class="w-full mb-6 sm:w-1/3 sm:text-center">
+                            
+                        </div>
+                        <div class="w-full mb-6 sm:w-1/3 flex sm:justify-end"><a href="/download" class="text-sm text-grey-dark leading-normal mr-10 sm:mr-0 sm:ml-8">Download</a> <a href="/demo" class="text-sm text-grey-dark leading-normal mr-10 sm:mr-0 sm:ml-8">Demo</a> <a href="/version" class="text-sm text-grey-dark leading-normal mr-10 sm:mr-0 sm:ml-8">Versions</a> <a href="https://www.donationalerts.com/r/diamond1895" class="text-sm text-grey-dark leading-normal mr-10 sm:mr-0 sm:ml-8">Donat</a></div>
+                    </div>
+                </footer>
+            </div>
+                <script>
+                
+                    let players = document.querySelectorAll("lottie-player");
+                    document.addEventListener("scroll", (e) => {
+                        players.forEach(function (e) {
+                            e.getBoundingClientRect().top - window.innerHeight < 0 && e.getBoundingClientRect().bottom > 0 ? e.play() : e.stop();
+                        });
+                    });
+        
+            
+                    let mainTitleParts = document.querySelectorAll(".main-title-parts");
+            
+                    if(window.innerWidth < 567){
+                        mainTitleParts[0].style.width = forYour[0].width;
+                    }
+            
+                    setInterval(()=>{
+                        mainTitleCounter = (mainTitleCounter == (forYour.length-1)) ? 0 : mainTitleCounter+1 ;
+                        let mainTitlePart_1 = mainTitleParts[0];
+                        let mainTitlePart_2 = mainTitleParts[1];
+            
+                        mainTitlePart_1.classList.add('opacity-0');
+                        mainTitlePart_1.classList.remove('opacity-100');
+            
+                        mainTitlePart_2.classList.add('opacity-0');
+                        mainTitlePart_2.classList.remove('opacity-100');
+            
+                        setTimeout(()=>{
+                            if(mainTitleCounter % 2 == 0){
+                                if(window.innerWidth >= 567){
+                                    mainTitlePart_1.style.width = forYour[mainTitleCounter].widthSM;
+                                }else{
+                                    mainTitlePart_1.style.width = forYour[mainTitleCounter].width;
+                                }
+                            }
+                            mainTitlePart_1.innerHTML = forYour[mainTitleCounter].label;
+                            mainTitlePart_1.classList.remove('opacity-0');
+                            mainTitlePart_1.classList.add('opacity-100');
+            
+                            mainTitlePart_2.innerHTML = forYour[mainTitleCounter+1].label;
+                            mainTitlePart_2.classList.remove('opacity-0');
+                            mainTitlePart_2.classList.add('opacity-100');
+            
+                            mainTitleCounter = (mainTitleCounter == (forYour.length-1)) ? 0 : mainTitleCounter+1 ;
+                        }, 500);
+                    }, 3000);
+            
+                </script>
+                <script>
+        
+                
+                    let navShadows = true;
+            
+                    document.querySelector('.m-nav-search').addEventListener('click', ()=>{
+                        document.querySelector('.lf-header').classList.add('mobile-search-active');
+                        document.body.classList.add('noscroll');
+                    });
+            
+                    document.querySelector('.m-nav-hamburger').addEventListener('click', ()=>{
+                        document.querySelector('.lf-header').classList.add('mobile-nav-active');
+                        document.body.classList.add('noscroll');
+                    });
+            
+                    document.querySelector('.m-nav-close').addEventListener('click', ()=>{
+                        document.querySelector('.lf-header').classList.remove('mobile-nav-active');
+                        document.querySelector('.lf-header').classList.remove('mobile-search-active');
+                        document.body.classList.remove('noscroll');
+                    });
+            
+                    window.addEventListener('resize', ()=>{
+                        resetNavMenu();
+                        resetUserMenu();
+                    });
+            
+                    document.addEventListener('scroll', ()=>{
+                        if(navShadows && document.querySelector('body').getBoundingClientRect().y<0){
+                            document.querySelector('.lf-header-container').classList.add('shadow-sm');
+                        }else{
+                            document.querySelector('.lf-header-container').classList.remove('shadow-sm');
+                        }
+                    });
+            
+                    let userMenuList = document.querySelector('.user-menu-list');
+                    let menuItems = document.querySelectorAll('.nav-list-item');
+                    let activeMenuId = null;
+            
+                    function resetUserMenu(){
+                        if(userMenuList){
+                            userMenuList.classList.remove('active');
+                        }
+                    }
+            
+                    function resetNavMenu(){
+                        activeMenuId = null;
+                        menuItems.forEach((item)=>{
+                            item.classList.remove('active');
+                        });
+                    }
+            
+                    function toggleMenuNav(id){
+                        resetUserMenu();
+                        if(window.innerWidth<768) {
+                            if (activeMenuId === id) {
+                                activeMenuId = null;
+                                document.querySelector('.nav-list-item-' + id).classList.toggle('active');
+                            } else if (activeMenuId !== null) {
+                                document.querySelector('.nav-list-item-' + activeMenuId).classList.toggle('active');
+                                document.querySelector('.nav-list-item-' + id).classList.toggle('active');
+                                activeMenuId = id;
+                            } else {
+                                document.querySelector('.nav-list-item-' + id).classList.toggle('active');
+                                activeMenuId = id;
+                            }
+                        }
+                    }
+            
+                    function toggleUserNav(){
+                        resetNavMenu();
+                        if(window.innerWidth<768) {
+                            document.querySelector('.user-menu-list').classList.toggle('active');
+                        }
+                    }
+            
+                </script>
+                </div>
+        <div class="fixed z-50 px-5 bg-lf-bg md:px-0 pin-t pin-l pin-r trans lf-header-container">
+	    <header class="container mx-auto lf-header">
 		<div class="flex justify-between items-center h-full">
 			<div class="flex relative z-20 justify-between items-center w-1/2 h-full md:w-auto">
-				<a href="#" class="flex-no-shrink"><img src="Underbox.svg" alt="Underbox" class="lf-logo lf-logo-dark -mt-1"> <img src="Underbox-lite.svg" alt="Underbox" class="lf-logo lf-logo-white -mt-1"></a>
+				<a href="index.html" class="flex-no-shrink"><img src="Underbox.svg" alt="Underbox" class="lf-logo lf-logo-dark -mt-1"> <img src="Underbox-lite.svg" alt="Underbox" class="lf-logo lf-logo-white -mt-1"></a>
 			</div>
 			<div class="flex z-10 flex-col-reverse justify-end items-end w-full nav-container bg-lf-bg pin-l pin-t pin-b md:flex-row md:items-center">
 				<nav class="self-end w-full sm:ml-16">
@@ -117,223 +287,7 @@
 			</div>
 		</div>
 	</header>
-</div>
-    <div class="py-12 bg-lf-bg px-5 md:px-0">
-        <div class="container md:flex mx-auto">
-            <div>
-                <h1 class="main-title text-4-2xl sm:text-6xl  mb-4 font-normal font-lf-bold text-black max-w-lg mx-auto text-center md:text-left">
-                    A new version of the Underbox <span>is</span> <div class="main-title-anim-container flex flex-wrap justify-center md:justify-start"><span class="text-lf-teal main-title-parts trans block opacity-100" style="width: 214px;">coming</span>  <span class=" block mx-3 sm:mx-4">   </span> <span class="block text-lf-teal main-title-parts trans opacity-100">soon</span></div></h1>
-                <p class="text-base sm:text-xl mb-8 text-grey-dark max-w-lg mx-auto md:ml-0 text-center md:text-left leading-normal w-2/3">Underbox is a merger of two games Undertale and Incredibox. A mod in which we can make our own mixes with your favorite characters and sounds from Undertale.</p>
-                <div class="flex md:block justify-center mb-10">
-                    <a href="/download" class="getting_started_button">
-                        <button class="bg-lf-teal text-base trans hover:bg-lf-teal-dark-3 hover:shadow-lg-teal sm:text-lg text-white rounded-md py-4 px-8 sm:py-5 sm:px-16"><span class="font-lf-bold">Download</span>
-                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.78244 7.87228H11.6096L7.75314 11.7287C7.44494 12.0369 7.44494 12.5427 7.75314 12.8509C8.06134 13.1591 8.5592 13.1591 8.8674 12.8509L14.0752 7.64311C14.3834 7.33491 14.3834 6.83705 14.0752 6.52885L8.8753 1.31317C8.72766 1.16519 8.52721 1.08203 8.31817 1.08203C8.10914 1.08203 7.90869 1.16519 7.76104 1.31317C7.45285 1.62137 7.45285 2.11923 7.76104 2.42743L11.6096 6.29177H1.78244C1.3478 6.29177 0.992188 6.64739 0.992188 7.08203C0.992188 7.51667 1.3478 7.87228 1.78244 7.87228Z" fill="white"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58421 1.13645C7.77874 0.941555 8.0428 0.832031 8.31817 0.832031C8.59361 0.832031 8.85773 0.941609 9.05228 1.13659L14.252 6.35207C14.6577 6.75791 14.6577 7.41409 14.252 7.81988L9.04418 13.0277C8.63835 13.4335 7.9822 13.4335 7.57636 13.0277C7.17054 12.6218 7.17054 11.9578 7.57636 11.5519L11.006 8.12228H1.78244C1.20973 8.12228 0.742188 7.65474 0.742188 7.08203C0.742188 6.50931 1.20973 6.04177 1.78244 6.04177H11.0078L7.58427 2.6042C7.17856 2.19838 7.17847 1.54225 7.58421 1.13645ZM8.31817 1.33203C8.17554 1.33203 8.03876 1.38878 7.93802 1.48975C7.72745 1.70031 7.72725 2.04008 7.93782 2.25065L12.2114 6.54177H1.78244C1.48587 6.54177 1.24219 6.78546 1.24219 7.08203C1.24219 7.37859 1.48587 7.62228 1.78244 7.62228H12.2131L7.92992 11.9055C7.71935 12.1161 7.71935 12.4635 7.92992 12.6741C8.14049 12.8847 8.48006 12.8847 8.69062 12.6741L13.8984 7.46633C14.109 7.25576 14.109 6.91619 13.8984 6.70562L8.69833 1.48975C8.59759 1.38882 8.46078 1.33203 8.31817 1.33203Z" fill="white"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div class="lf-home-hero-illus-lottie mx-auto">
-                <lottie-player autoplay="" src="https://assets7.lottiefiles.com/packages/lf20_vwzm19mz.json" background="transparent" style="width: 100%; height: 100%;"></lottie-player>
-            </div>
-        </div>
-    </div>
-
-    <div class="py-12 bg-lf-bg px-5 md:px-0" style="
-    padding-left: 50px;
-    padding-right: 50px;
-">
-<div id="plugin-landing " class="lf-padding container mx-auto">
-    <div class="">
-        <div class="md:py-32">
-        <div class="container mx-auto">
-            <div class="flex flex-col sm:flex-row items-center justify-end relative">
-                <div class="w-full flex flex-col lg:flex-row-reverse lg:items-center">
-                    <div class="sm:px-12">
-                        <h2 class="text-4xl sm:text-5xl font-normal font-lf-bold text-grey-darkest mb-6">Play the Demo</h2>
-                        <p class="text-lg sm:text-xl text-grey-dark leading-normal mb-6">Play the Demo version of the game consisting of only one version of The Ruins. If you liked the mod, then you can <a href="/download" class="text-lf-teal-dark-3 trans hover:text-lf-teal">download</a> it</p>
-                        <div class="flex md:block justify-center mb-10">
-                            <a href="/demo" class="getting_started_button">
-                                <button class="bg-lf-teal text-base trans hover:bg-lf-teal-dark-3 hover:shadow-lg-teal sm:text-lg text-white rounded-md py-4 px-8 sm:py-5 sm:px-16"><span class="font-lf-bold">Demo</span>
-                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.78244 7.87228H11.6096L7.75314 11.7287C7.44494 12.0369 7.44494 12.5427 7.75314 12.8509C8.06134 13.1591 8.5592 13.1591 8.8674 12.8509L14.0752 7.64311C14.3834 7.33491 14.3834 6.83705 14.0752 6.52885L8.8753 1.31317C8.72766 1.16519 8.52721 1.08203 8.31817 1.08203C8.10914 1.08203 7.90869 1.16519 7.76104 1.31317C7.45285 1.62137 7.45285 2.11923 7.76104 2.42743L11.6096 6.29177H1.78244C1.3478 6.29177 0.992188 6.64739 0.992188 7.08203C0.992188 7.51667 1.3478 7.87228 1.78244 7.87228Z" fill="white"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58421 1.13645C7.77874 0.941555 8.0428 0.832031 8.31817 0.832031C8.59361 0.832031 8.85773 0.941609 9.05228 1.13659L14.252 6.35207C14.6577 6.75791 14.6577 7.41409 14.252 7.81988L9.04418 13.0277C8.63835 13.4335 7.9822 13.4335 7.57636 13.0277C7.17054 12.6218 7.17054 11.9578 7.57636 11.5519L11.006 8.12228H1.78244C1.20973 8.12228 0.742188 7.65474 0.742188 7.08203C0.742188 6.50931 1.20973 6.04177 1.78244 6.04177H11.0078L7.58427 2.6042C7.17856 2.19838 7.17847 1.54225 7.58421 1.13645ZM8.31817 1.33203C8.17554 1.33203 8.03876 1.38878 7.93802 1.48975C7.72745 1.70031 7.72725 2.04008 7.93782 2.25065L12.2114 6.54177H1.78244C1.48587 6.54177 1.24219 6.78546 1.24219 7.08203C1.24219 7.37859 1.48587 7.62228 1.78244 7.62228H12.2131L7.92992 11.9055C7.71935 12.1161 7.71935 12.4635 7.92992 12.6741C8.14049 12.8847 8.48006 12.8847 8.69062 12.6741L13.8984 7.46633C14.109 7.25576 14.109 6.91619 13.8984 6.70562L8.69833 1.48975C8.59759 1.38882 8.46078 1.33203 8.31817 1.33203Z" fill="white"></path>
-                                    </svg>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="lf-home-comparisons mb-10 lg:mb-0 relative flex-no-shrink pin-l pin-t flex items-center justify-center lg:justify-start h-full overflow-hidden">
-                        <div class="flex items-end">
-                            <div class="mx-1 sm:mx-2">
-                                <div class="lottie w-full rounded-lg sm:rounded-2xl shadow-md border-lf-teal mb-3">
-                                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                    <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_ptxvu7sd.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop="" autoplay=""></lottie-player>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!--
-                <div class="w-full md:w-2/3 mx-auto px-6">
-                    <h2 class="font-lf-bold text-4xl md:text-6xl text-center">Coming Soon</h2>
-                    <h3 class="font-normal font-lf-regular text-2xl text-grey text-center py-6 leading-normal">Preview your
-                        Check out the Snowdin V2 teaser.<div class="hidden md:block"></div>This version is in development</h3></div>
-                <div class="mx-auto text-center py-16 ">
-                    <iframe src="https://www.youtube.com/embed/81I8NTpsns8" width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="allowfullscreen" class="rounded-lg sm:rounded-2xl shadow-md border-lf-teal h-64 md:h-120"></iframe>
-                </div>
-            </div>
-            -->
-    </div>
-    
-    <div class="bg-white px-5 md:px-0">
-        <footer class="container mx-auto py-12 border-t border-grey-lighter">
-            <div class="flex flex-col sm:flex-row sm:items-end">
-                <div class="w-full mb-6 sm:w-1/3">
-                    <p class="text-sm text-grey-dark leading-normal">TheDiamondStudio website creator</p>
-                    <p class="text-sm text-grey-dark leading-normal">Copyright © 2021 Underobx. All rights reserved.</p>
-                </div>
-                <div class="w-full mb-6 sm:w-1/3 sm:text-center">
-                    
-                </div>
-                <div class="w-full mb-6 sm:w-1/3 flex sm:justify-end">
-                    <a href="/download" class="text-sm text-grey-dark leading-normal mr-10 sm:mr-0 sm:ml-8">Download</a>
-                    <a href="/demo" class="text-sm text-grey-dark leading-normal mr-10 sm:mr-0 sm:ml-8">Demo</a> 
-                    <a href="/version" class="text-sm text-grey-dark leading-normal mr-10 sm:mr-0 sm:ml-8">Versions</a> 
-                    <a href="https://www.donationalerts.com/r/diamond1895" class="text-sm text-grey-dark leading-normal mr-10 sm:mr-0 sm:ml-8">Donat</a></div>
-            </div>
-        </footer>
-    </div>
-
-        <script>
-        
-            let players = document.querySelectorAll("lottie-player");
-            document.addEventListener("scroll", (e) => {
-                players.forEach(function (e) {
-                    e.getBoundingClientRect().top - window.innerHeight < 0 && e.getBoundingClientRect().bottom > 0 ? e.play() : e.stop();
-                });
-            });
 
     
-            let mainTitleParts = document.querySelectorAll(".main-title-parts");
-    
-            if(window.innerWidth < 567){
-                mainTitleParts[0].style.width = forYour[0].width;
-            }
-    
-            setInterval(()=>{
-                mainTitleCounter = (mainTitleCounter == (forYour.length-1)) ? 0 : mainTitleCounter+1 ;
-                let mainTitlePart_1 = mainTitleParts[0];
-                let mainTitlePart_2 = mainTitleParts[1];
-    
-                mainTitlePart_1.classList.add('opacity-0');
-                mainTitlePart_1.classList.remove('opacity-100');
-    
-                mainTitlePart_2.classList.add('opacity-0');
-                mainTitlePart_2.classList.remove('opacity-100');
-    
-                setTimeout(()=>{
-                    if(mainTitleCounter % 2 == 0){
-                        if(window.innerWidth >= 567){
-                            mainTitlePart_1.style.width = forYour[mainTitleCounter].widthSM;
-                        }else{
-                            mainTitlePart_1.style.width = forYour[mainTitleCounter].width;
-                        }
-                    }
-                    mainTitlePart_1.innerHTML = forYour[mainTitleCounter].label;
-                    mainTitlePart_1.classList.remove('opacity-0');
-                    mainTitlePart_1.classList.add('opacity-100');
-    
-                    mainTitlePart_2.innerHTML = forYour[mainTitleCounter+1].label;
-                    mainTitlePart_2.classList.remove('opacity-0');
-                    mainTitlePart_2.classList.add('opacity-100');
-    
-                    mainTitleCounter = (mainTitleCounter == (forYour.length-1)) ? 0 : mainTitleCounter+1 ;
-                }, 500);
-            }, 3000);
-    
-        </script>
-        <script>
-
-        
-            let navShadows = true;
-    
-            document.querySelector('.m-nav-search').addEventListener('click', ()=>{
-                document.querySelector('.lf-header').classList.add('mobile-search-active');
-                document.body.classList.add('noscroll');
-            });
-    
-            document.querySelector('.m-nav-hamburger').addEventListener('click', ()=>{
-                document.querySelector('.lf-header').classList.add('mobile-nav-active');
-                document.body.classList.add('noscroll');
-            });
-    
-            document.querySelector('.m-nav-close').addEventListener('click', ()=>{
-                document.querySelector('.lf-header').classList.remove('mobile-nav-active');
-                document.querySelector('.lf-header').classList.remove('mobile-search-active');
-                document.body.classList.remove('noscroll');
-            });
-    
-            window.addEventListener('resize', ()=>{
-                resetNavMenu();
-                resetUserMenu();
-            });
-    
-            document.addEventListener('scroll', ()=>{
-                if(navShadows && document.querySelector('body').getBoundingClientRect().y<0){
-                    document.querySelector('.lf-header-container').classList.add('shadow-sm');
-                }else{
-                    document.querySelector('.lf-header-container').classList.remove('shadow-sm');
-                }
-            });
-    
-            let userMenuList = document.querySelector('.user-menu-list');
-            let menuItems = document.querySelectorAll('.nav-list-item');
-            let activeMenuId = null;
-    
-            function resetUserMenu(){
-                if(userMenuList){
-                    userMenuList.classList.remove('active');
-                }
-            }
-    
-            function resetNavMenu(){
-                activeMenuId = null;
-                menuItems.forEach((item)=>{
-                    item.classList.remove('active');
-                });
-            }
-    
-            function toggleMenuNav(id){
-                resetUserMenu();
-                if(window.innerWidth<768) {
-                    if (activeMenuId === id) {
-                        activeMenuId = null;
-                        document.querySelector('.nav-list-item-' + id).classList.toggle('active');
-                    } else if (activeMenuId !== null) {
-                        document.querySelector('.nav-list-item-' + activeMenuId).classList.toggle('active');
-                        document.querySelector('.nav-list-item-' + id).classList.toggle('active');
-                        activeMenuId = id;
-                    } else {
-                        document.querySelector('.nav-list-item-' + id).classList.toggle('active');
-                        activeMenuId = id;
-                    }
-                }
-            }
-    
-            function toggleUserNav(){
-                resetNavMenu();
-                if(window.innerWidth<768) {
-                    document.querySelector('.user-menu-list').classList.toggle('active');
-                }
-            }
-    
-        </script>
-        </div>
 </body>
 </html>
