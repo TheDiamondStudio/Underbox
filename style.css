@@ -1,3 +1,4 @@
+
 .trans {
 	-webkit-transition: all .25s;
 	transition: all .25s;
@@ -13,41 +14,6 @@
 	transition-duration: .15s;
 }
 
-@font-face {
-	font-family:averta_stdblack;src:url("../fonts/avertastd-black-webfont.woff2") format("woff2"),url("../fonts/avertastd-black-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
-
-@font-face {
-	font-family:averta_stdbold;src:url("../fonts/avertastd-bold-webfont.woff2") format("woff2"),url("../fonts/avertastd-bold-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
-
-@font-face {
-	font-family:averta_stdextrabold;src:url("../fonts/avertastd-extrabold-webfont.woff2") format("woff2"),url("../fonts/avertastd-extrabold-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
-
-@font-face {
-	font-family:averta_stdextrathin;src:url("../fonts/avertastd-extrathin-webfont.woff2") format("woff2"),url("../fonts/avertastd-extrathin-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
-
-@font-face {
-	font-family:averta_stdlight;src:url("../fonts/avertastd-light-webfont.woff2") format("woff2"),url("../fonts/avertastd-light-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
-
-@font-face {
-	font-family:averta_stdregular;src:url("../fonts/avertastd-regular-webfont.woff2") format("woff2"),url("../fonts/avertastd-regular-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
-
-@font-face {
-	font-family:averta_stdsemibold;src:url("../fonts/avertastd-semibold-webfont.woff2") format("woff2"),url("../fonts/avertastd-semibold-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
-
-@font-face {
-	font-family:averta_stdthin;src:url("../fonts/avertastd-thin-webfont.woff2") format("woff2"),url("../fonts/avertastd-thin-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
-
-@font-face {
-	font-family:averta_stdbold_italic;src:url("../fonts/avertastd-bolditalic-webfont.woff2") format("woff2"),url("../fonts/avertastd-bolditalic-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:auto;
-}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html {
 	line-height: 1.15;
@@ -57,7 +23,14 @@
 body {
 	margin: 0;
 }
-
+body {
+	font-family: 'Montserrat', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	background: #fff;
+	margin-top: 72px;
+}
 main {
 	display: block;
 }
@@ -1071,62 +1044,32 @@ table {
 }
 
 .font-lf-bold {
-	font-family: averta_stdbold;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 .font-lf-semi-bold {
-	font-family: averta_stdsemibold;
-}
-
-.font-lf-extra-bold {
-	font-family: averta_stdextrabold;
-}
-
-.font-lf-light {
-	font-family: averta_stdlight;
-}
-
-.font-lf-regular {
-	font-family: averta_stdregular;
-}
-
-.hover\:font-lf-bold:hover {
-	font-family: averta_stdbold;
-}
-
-.font-hairline {
-	font-weight: 100;
-}
-
-.font-light {
-	font-weight: 300;
-}
-
-.font-normal {
-	font-weight: 400;
-}
-
-.font-medium {
-	font-weight: 500;
-}
-
-.font-semibold {
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 }
 
-.font-bold {
-	font-weight: 700;
+.font-lf-extra-bold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
 }
 
-.font-black {
-	font-weight: 900;
+.font-lf-light {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 }
 
-.hover\:font-bold:hover {
-	font-weight: 700;
+.font-lf-regular {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 }
 
-.focus\:font-bold:focus {
+.hover\:font-lf-bold:hover {
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
 
@@ -5692,14 +5635,7 @@ table {
 	}
 }
 
-body {
-	font-family: averta_stdregular,Helvetica Neue,Helvetica;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	background: #fff;
-	margin-top: 72px;
-}
+
 
 body.modal-active {
 	position: fixed;
@@ -9036,3 +8972,72 @@ input:checked+.lf-switch-slider:before {
 		width: 100%;
 	}
 }
+.lottie-player {
+	width: 300px;
+	height: 300px;
+}
+.lottie {
+	-webkit-transition-duration: .15s;
+	transition-duration: .15s;
+}
+.lottie:hover {
+	-webkit-filter: brightness(94%);
+}
+.bg-lf-teal:active {
+	transform: scale(0.93);
+}
+
+.mi-deti-morgenshterna:hover {
+	transform: scale(1.05);
+	-webkit-filter: brightness(94%);
+}
+.otshlopat {
+	border-radius: 8px;
+}
+@media (min-width: 333px) {
+	.lottie-player {
+		width: 150px;
+		height: 150px;
+	}
+	.lf-home-comparisons .lottie {
+		width: 150px;
+		height: 150px;
+	}
+}
+@media (min-width: 430px) {
+	.lottie-player {
+		width: 200px;
+		height: 200px;
+	}
+	.lf-home-comparisons .lottie {
+		width: 200px;
+		height: 200px;
+	}
+}
+@media (min-width: 493px) {
+	.lottie-player {
+		width: 300px;
+		height: 300px;
+	}
+	.lf-home-comparisons .lottie {
+		width: 300px;
+	height: 274px;
+	}
+}
+
+.tippy-box[data-theme~='discord'] {
+	background-color: #00000000;
+	overflow: hidden;
+  }
+  .tippy-box[data-theme~='discord'][data-placement^='top'] > .tippy-arrow::before {
+	border-top-color: #00000000;
+  }
+  .tippy-box[data-theme~='discord'][data-placement^='bottom'] > .tippy-arrow::before {
+	border-bottom-color: #00000000;
+  }
+  .tippy-box[data-theme~='discord'][data-placement^='left'] > .tippy-arrow::before {
+	border-left-color: #00000000;
+  }
+  .tippy-box[data-theme~='discord'][data-placement^='right'] > .tippy-arrow::before {
+	border-right-color: #00000000;
+  }
