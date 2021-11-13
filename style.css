@@ -5652,11 +5652,11 @@ body.modal-active {
 }
 
 ::-moz-selection {
-	background: #9bf0f0;
+	background: #4ab0fd;
 }
 
 ::selection {
-	background: #9bf0f0;
+	background: #4ab0fd;
 }
 
 .dropdown:hover>.dropdown-content {
@@ -9071,8 +9071,8 @@ body {
 	height: 36px;
 	width: 36px;
 	z-index:99998;
-	-webkit-transition:all 0.3s ease-out;
-	transition:all 0.3s ease-out
+	-webkit-transition:all 0.2s ease-out;
+	transition:all 0.1s ease-out
 }
 .cursor2{
 	border: 3px solid #3498db;
