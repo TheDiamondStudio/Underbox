@@ -10,24 +10,17 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="content-language" content="en">
     <meta name="locale" content="en">
-    <title>Underbox | Incredibox + Undertale</title>
-    <meta name="description" content="Underbox is a merger of two games Undertale and Incredibox. A mod in which we can make our own mixes with your favorite characters and sounds from Undertale.">
-    <meta property="og:title" content="Underbox | Incredibox + Undertale">
-    <meta property="og:description" content="Underbox is a merger of two games Undertale and Incredibox. A mod in which we can make our own mixes with your favorite characters and sounds from Undertale.">
+    <title>Underbox | Demo</title>
+    <meta name="description" content="Play the Demo version of Underbox in your browser.">
+    <meta property="og:title" content="Underbox | Demo">
+    <meta property="og:description" content="Play the Demo version of Underbox in your browser.">
     <meta property="og:url" content="https://thediamondstudio.github.io/Underbox/">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="Ready.png">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" as="style" href="https://static7.lottiefiles.com/css/app.0b7fc8.css">
 <link rel="preconnect" as="script" href="https://cdn.amplitude.com/libs/amplitude-7.2.1-min.gz.js" crossorigin="">
 <link rel="dns-prefetch" href="https://connect.facebook.net">
-
-
-
     <script src="https://js.abtesting.ai/ab.js?userid=2975"></script><style>body { visibility:hidden; }</style><script type="text/javascript" src="https://external.abtesting.ai/fetch_ab_test/?width=1115&amp;url=https%3A%2F%2Flottiefiles.com%2F&amp;referrer=https%3A%2F%2Flottiefiles.com%2Fweb-player&amp;uuid=0fb30cea-b11e-4990-83d3-bcc696c8fff2&amp;ab_test_id=&amp;utm_term=&amp;url_params="></script>
-
-    
-    
-    
             <!-- Hotjar Tracking Code for https://lottiefiles.com -->
 <script>
     (function(h,o,t,j,a,r){
@@ -60,6 +53,11 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+    <style>
+        body {
+            cursor: auto;
+        }
+    </style>
     <div id="app">
         <div class="
     fixed z-50 px-5 bg-lf-bg md:px-0 pin-t pin-l pin-r trans lf-header-container">
@@ -136,18 +134,49 @@
     }
 }
 </style>
-    <div class="bg-white px-5 md:px-0">
-        <footer class="container mx-auto py-12 border-t border-grey-lighter">
-            <div class="flex flex-col sm:flex-row sm:items-end">
-                <div class="w-full mb-6 sm:w-1/3">
-                    <p class="text-sm text-grey-dark leading-normal">TheDiamondStudio website creator</p>
-                    <p class="text-sm text-grey-dark leading-normal">Copyright © 2021 Underobx. All rights reserved.</p>
+<div class="bg-white px-5 md:px-0">
+    <footer class="container mx-auto py-12 border-t border-grey-lighter">
+        <div class="flex flex-col sm:flex-row sm:items-end">
+            <div class="w-full mb-6 sm:w-1/3">
+                <p class="text-sm text-grey-dark leading-normal">TheDiamondStudio website creator</p>
+                <p class="text-sm text-grey-dark leading-normal">Copyright © 2021 Underbox. All rights reserved.</p>
+            </div>
+            <div class="w-full mb-6 sm:w-1/3 sm:text-center">
+                
+            </div>
+            <div class="w-full mb-6 sm:w-1/3 flex sm:justify-end">
+                <button id="youtube" class="px-3" onclick="window.open('https://www.youtube.com/channel/UCeJTrmHQwwDXew_jBJXdmuw')"><img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-youtube.svg">
+               <button id="discord"  onclick="window.open('https://discord.com/invite/mEb73gN6Dv')"><img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-discord.svg">
+                </button>
                 </div>
-                <div class="w-full mb-6 sm:w-1/3 sm:text-center">
-                    
-                </div></div>
-        </footer>
-    </div>
+    </footer>
+</div>
+</div>
+<script>
+            // With the above scripts loaded, you can call `tippy()` with a CSS
+                    // selector and a `content` prop:
+                    tippy('#youtube', {
+                        content: '<iframe class="otshlopat" width="350" height="350" src="https://www.youtube.com/embed/81I8NTpsns8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                        allowHTML: true,
+                        animation: "shift-away",
+                        theme: 'discord',
+                    });
+
+</script>
+<script>
+
+
+                    // With the above scripts loaded, you can call `tippy()` with a CSS
+        // selector and a `content` prop:
+        tippy('#discord', {
+            content: '<iframe src="https://discord.com/widget?id=814179383462854736&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>',
+            allowHTML: true,
+            animation: "shift-away",
+            theme: 'discord',
+        });
+</script>
+
+
 
         <script>
         
