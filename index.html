@@ -100,11 +100,11 @@
 	</header>
 </div>
 
-    <div class="py-12 bg-lf-bg px-5 md:px-0">
+    <div class="home py-12 bg-lf-bg px-5 md:px-0">
         <div class="container md:flex mx-auto">
             <div>
                 <h1 class=" text-4-2xl sm:text-6xl  mb-4 font-normal font-lf-bold text-black max-w-lg mx-auto text-center md:text-left">
-                    A new version of the Underbox is <div class="text-lf-teal">coming soon</div></h1>
+                    A new version of the Underbox is <div class="text-lf-teal coming">coming soon</div></h1>
                 <p class="text-base sm:text-xl mb-8 text-grey-dark max-w-lg mx-auto md:ml-0 text-center md:text-left leading-normal w-2/3">Underbox is a merger of two games Undertale and Incredibox. A mod in which we can make our own mixes with your favorite characters and sounds from Undertale.</p>
                 <div class="flex md:block justify-center mb-10">
                     <a href="download.html" class="getting_started_button">
@@ -137,7 +137,7 @@
                         <h2 class="text-4xl sm:text-5xl font-normal font-lf-bold text-grey-darkest mb-6">Play the Demo</h2>
                         <p class="text-lg sm:text-xl text-grey-dark leading-normal mb-6">Play the Demo version of the game consisting of only one version of The Ruins. If you liked the mod, then you can <a href="/download" class="text-lf-teal-dark-3 trans hover:text-lf-teal">download</a> it</p>
                         <div class="flex md:block justify-center mb-10">
-                            <a href="/demo.index" class="hover-link getting_started_button">
+                            <a href="/demo" class="hover-link getting_started_button">
                                 <button class="bg-lf-teal text-base trans hover:bg-lf-teal-dark-3 hover:shadow-lg-teal sm:text-lg text-white rounded-md py-4 px-8 sm:py-5 sm:px-16"><span class="font-lf-bold">Demo</span>
                                     <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.78244 7.87228H11.6096L7.75314 11.7287C7.44494 12.0369 7.44494 12.5427 7.75314 12.8509C8.06134 13.1591 8.5592 13.1591 8.8674 12.8509L14.0752 7.64311C14.3834 7.33491 14.3834 6.83705 14.0752 6.52885L8.8753 1.31317C8.72766 1.16519 8.52721 1.08203 8.31817 1.08203C8.10914 1.08203 7.90869 1.16519 7.76104 1.31317C7.45285 1.62137 7.45285 2.11923 7.76104 2.42743L11.6096 6.29177H1.78244C1.3478 6.29177 0.992188 6.64739 0.992188 7.08203C0.992188 7.51667 1.3478 7.87228 1.78244 7.87228Z" fill="white"></path>
@@ -172,6 +172,9 @@
             </div>
             -->
     </div>
+    <div class="flex flex-col items-center lg:text-center px-5 lg:px-0"><h2 class="text-4-2xl lg:text-5-2xl font-normal font-lf-bold text-grey-darkest mb-4">Project News</h2> <p class="text-xl text-grey-dark leading-normal max-w-md mb-12">Project news will be shown here.</p></div>
+    <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-post="Underbox0/4" data-width="100%"></script>
+    
     
     <div class="bg-white px-5 md:px-0">
         <footer class="container mx-auto py-12 border-t border-grey-lighter">
@@ -191,38 +194,6 @@
         </footer>
     </div>
 </div>
-<div class='cursor' id="cursor"></div>
-<div class='cursor2' id="cursor2"></div>
-<script>
-    //Page cursors
-
-    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
-        t.style.left = n.clientX + "px", 
-		t.style.top = n.clientY + "px", 
-		e.style.left = n.clientX + "px", 
-		e.style.top = n.clientY + "px", 
-		i.style.left = n.clientX + "px", 
-		i.style.top = n.clientY + "px"
-    });
-    var t = document.getElementById("cursor"),
-        e = document.getElementById("cursor2");
-    function n(t) {
-        e.classList.add("hover")
-    }
-    function s(t) {
-        e.classList.remove("hover")
-    }
-    s();
-    for (var r = document.querySelectorAll(".hover-link"), a = r.length - 1; a >= 0; a--) {
-        o(r[a])
-    }
-    function o(t) {
-        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
-    }
-
-
-    
-</script>
 <script>
                 // With the above scripts loaded, you can call `tippy()` with a CSS
                         // selector and a `content` prop:
