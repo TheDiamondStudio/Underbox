@@ -9086,7 +9086,7 @@ input:checked+.lf-switch-slider:before {
     justify-content: center;
 
 }
-@media (max-width: 660px) {
+@media (max-width: 985px) {
 	.tgme_page_widget {
 		
 		display: flex;
@@ -9096,6 +9096,12 @@ input:checked+.lf-switch-slider:before {
     	align-content: space-around;
 	}
 }
+
+#telegram-post-Underbox0-7 {
+	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
+}
 #telegram-post-Underbox0-4 {
 	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
 }
