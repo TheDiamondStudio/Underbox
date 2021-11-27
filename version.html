@@ -208,37 +208,34 @@
                             
                         </div>
                         <div class="w-full mb-6 sm:w-1/3 flex sm:justify-end">
+                            <button id="telegram" class="hover-link" onclick="window.open('https://t.me/Underbox0')"><img class="trans mi-deti-morgenshterna" src="https://tabler-icons.io/static/tabler-icons/icons/brand-telegram.svg">    
                             <button id="youtube" class="hover-link px-3" onclick="window.open('https://www.youtube.com/channel/UCeJTrmHQwwDXew_jBJXdmuw')"><img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-youtube.svg">
-                           <button id="discord" class="hover-link " onclick="window.open('https://discord.com/invite/mEb73gN6Dv')"><img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-discord.svg">
+                           <button id="discord" class="hover-link"  onclick="window.open('https://discord.com/invite/mEb73gN6Dv')"><img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-discord.svg">
                             </button>
                             </div>
                 </footer>
             </div>
         </div>
         <script>
-                        // With the above scripts loaded, you can call `tippy()` with a CSS
-                                // selector and a `content` prop:
-                                tippy('#youtube', {
-                                    content: '<iframe class="otshlopat" width="350" height="350" src="https://www.youtube.com/embed/81I8NTpsns8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-                                    allowHTML: true,
-                                    animation: "shift-away",
-                                    theme: 'discord',
-                                    interactive: true,
-                                });
-        
+                tippy('#telegram', {
+                    content: 'Go to our Telegram channel where news about the project and so on are posted.',
+                    animation: "shift-away",
+                });
         </script>
         <script>
-            
-        
-                                // With the above scripts loaded, you can call `tippy()` with a CSS
-                    // selector and a `content` prop:
-                    tippy('#discord', {
-                        content: '<iframe src="https://discord.com/widget?id=814179383462854736&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>',
-                        allowHTML: true,
-                        animation: "shift-away",
-                        theme: 'discord',
-                        interactive: true,
-                    });
+                tippy('#youtube', {
+                    content: 'Go to our YouTube channel, it lays out Trailers, Teasers and a lot of interesting things',
+                    animation: "shift-away",
+                });
+        </script>
+        <script>
+                tippy('#discord', {
+                    content: '<iframe src="https://discord.com/widget?id=814179383462854736&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>',
+                    allowHTML: true,
+                    animation: "shift-away",
+                    theme: 'discord',
+                    interactive: true,
+                });
         </script>
 
 
