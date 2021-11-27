@@ -46,7 +46,132 @@
 <body>
 
     <div id="app">
-        
+        <style>
+            #tooltip {
+              background-color: #333;
+              color: white;
+              padding: 5px 10px;
+              border-radius: 4px;
+              font-size: 13px;
+            }
+            .tooltip {
+              background-color: #333;
+              color: white;
+              padding: 5px 10px;
+              border-radius: 4px;
+              font-size: 13px;
+            }
+            #arrow,
+            #arrow::before {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: inherit;
+            }
+
+            #arrow {
+            visibility: hidden;
+            }
+
+            #arrow::before {
+            visibility: visible;
+            content: '';
+            transform: rotate(45deg);
+            }
+            #tooltip3[data-popper-placement^='top'] > #arrow {
+            bottom: -4px;
+            }
+
+            #tooltip3[data-popper-placement^='bottom'] > #arrow {
+            top: -4px;
+            }
+
+            #tooltip3[data-popper-placement^='left'] > #arrow {
+            right: -4px;
+            }
+
+            #tooltip3[data-popper-placement^='right'] > #arrow {
+            left: -4px;
+            }
+            #tooltip3 {
+            /* ... */
+            display: none;
+            }
+
+            #tooltip3[data-show] {
+            display: block;
+            }
+            #tooltip2[data-popper-placement^='top'] > #arrow {
+            bottom: -4px;
+            }
+
+            #tooltip2[data-popper-placement^='bottom'] > #arrow {
+            top: -4px;
+            }
+
+            #tooltip2[data-popper-placement^='left'] > #arrow {
+            right: -4px;
+            }
+
+            #tooltip2[data-popper-placement^='right'] > #arrow {
+            left: -4px;
+            }
+            #tooltip2 {
+            /* ... */
+            display: none;
+            }
+
+            #tooltip2[data-show] {
+            display: block;
+            }
+            #tooltip1[data-popper-placement^='top'] > #arrow {
+            bottom: -4px;
+            }
+
+            #tooltip1[data-popper-placement^='bottom'] > #arrow {
+            top: -4px;
+            }
+
+            #tooltip1[data-popper-placement^='left'] > #arrow {
+            right: -4px;
+            }
+
+            #tooltip1[data-popper-placement^='right'] > #arrow {
+            left: -4px;
+            }
+            #tooltip1 {
+            /* ... */
+            display: none;
+            }
+
+            #tooltip1[data-show] {
+            display: block;
+            }
+
+            #tooltip[data-popper-placement^='top'] > #arrow {
+            bottom: -4px;
+            }
+
+            #tooltip[data-popper-placement^='bottom'] > #arrow {
+            top: -4px;
+            }
+
+            #tooltip[data-popper-placement^='left'] > #arrow {
+            right: -4px;
+            }
+
+            #tooltip[data-popper-placement^='right'] > #arrow {
+            left: -4px;
+            }
+            #tooltip {
+            /* ... */
+            display: none;
+            }
+
+            #tooltip[data-show] {
+            display: block;
+            }
+          </style>
         <div class="
     fixed z-50 px-5 bg-lf-bg md:px-0 pin-t pin-l pin-r trans lf-header-container">
 	<header class="container mx-auto lf-header">
@@ -57,22 +182,67 @@
 			<div class="flex z-10 flex-col-reverse justify-end items-end w-full nav-container bg-lf-bg pin-l pin-t pin-b md:flex-row md:items-center">
 				<nav class="self-end w-full sm:ml-16">
 					<ul class="flex flex-col justify-center items-center nav-list list-reset md:flex-row">
-						<a href="download.html" class="hover-link nav-orange nav-list-item nav-list-item-0 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
+						
+                        <a href="download.html" id="download"  class="hover-link nav-orange nav-list-item nav-list-item-0 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
 							<div onclick="toggleMenuNav(0)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0"><span class="mr-2 text-base nav-title">Download</span>
 							</div>
 						</a>
-						<a href="demo.html" class="hover-link nav-green nav-list-item nav-list-item-1 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
+
+                        <script>
+                            // With the above scripts loaded, you can call `tippy()` with a CSS
+                                    // selector and a `content` prop:
+                                    tippy('#download', {
+                                        content: 'Here you can download Underbox V1.',
+                                        animation: "shift-away",
+                                    });
+            
+                        </script>
+                        
+                        <a href="demo.html" id="demo" class="hover-link nav-green nav-list-item nav-list-item-1 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
 							<div onclick="toggleMenuNav(1)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0"><span class="mr-2 text-base nav-title">Demo</span>
 							</div>
 						</a>
-						<a href="version.html" class="hover-link nav-blue nav-list-item nav-list-item-2 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
+
+                        <script>
+                            // With the above scripts loaded, you can call `tippy()` with a CSS
+                                    // selector and a `content` prop:
+                                    tippy('#demo', {
+                                        content: 'Play the Demo version of Underbox in your browser.',
+                                        animation: "shift-away",
+                                    });
+            
+                        </script>
+                        
+                        <a href="version.html" id="version" class="hover-link nav-blue nav-list-item nav-list-item-2 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
 							<div onclick="toggleMenuNav(2)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0"><span class="mr-2 text-base nav-title">Versions</span>
 							</div>
 						</a>
-						<a href="https://www.donationalerts.com/r/diamond1895" class="hover-link nav-purple nav-list-item nav-list-item-3 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
+
+                        <script>
+                            // With the above scripts loaded, you can call `tippy()` with a CSS
+                                    // selector and a `content` prop:
+                                    tippy('#version', {
+                                        content: 'Do you want to know which versions are available in Underbox?This link is for you.',
+                                        animation: "shift-away",
+                                    });
+            
+                        </script>
+
+                        <a href="https://www.donationalerts.com/r/diamond1895" id="donat" class="hover-link nav-purple nav-list-item nav-list-item-3 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
 							<div onclick="toggleMenuNav(3)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0"><span class="mr-2 text-base nav-title">Donat</span>
 							</div>
 						</a>
+
+                        <script>
+                            // With the above scripts loaded, you can call `tippy()` with a CSS
+                                    // selector and a `content` prop:
+                                    tippy('#donat', {
+                                        content: 'Donate to the creator of the site.',
+                                        animation: "shift-away",
+                                    });
+            
+                        </script>
+                          
 					</ul>
 				</nav>
 				<div class="absolute pin-t p-4 pr-0 m-nav-container flex items-center -mr-3 md:relative md:p-0">
@@ -108,13 +278,25 @@
                 <p class="text-base sm:text-xl mb-8 text-grey-dark max-w-lg mx-auto md:ml-0 text-center md:text-left leading-normal w-2/3">Underbox is a merger of two games Undertale and Incredibox. A mod in which we can make our own mixes with your favorite characters and sounds from Undertale.</p>
                 <div class="flex md:block justify-center mb-10">
                     <a href="download.html" class="getting_started_button">
-                        <button class="hover-link bg-lf-teal text-base trans hover:bg-lf-teal-dark-3 hover:shadow-lg-teal sm:text-lg text-white rounded-md py-4 px-8 sm:py-5 sm:px-16"><span class="font-lf-bold">Download</span>
+                        <button  id="download-intro" class="hover-link bg-lf-teal text-base trans hover:bg-lf-teal-dark-3 hover:shadow-lg-teal sm:text-lg text-white rounded-md py-4 px-8 sm:py-5 sm:px-16"><span class="font-lf-bold">Download</span>
                             <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.78244 7.87228H11.6096L7.75314 11.7287C7.44494 12.0369 7.44494 12.5427 7.75314 12.8509C8.06134 13.1591 8.5592 13.1591 8.8674 12.8509L14.0752 7.64311C14.3834 7.33491 14.3834 6.83705 14.0752 6.52885L8.8753 1.31317C8.72766 1.16519 8.52721 1.08203 8.31817 1.08203C8.10914 1.08203 7.90869 1.16519 7.76104 1.31317C7.45285 1.62137 7.45285 2.11923 7.76104 2.42743L11.6096 6.29177H1.78244C1.3478 6.29177 0.992188 6.64739 0.992188 7.08203C0.992188 7.51667 1.3478 7.87228 1.78244 7.87228Z" fill="white"></path>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58421 1.13645C7.77874 0.941555 8.0428 0.832031 8.31817 0.832031C8.59361 0.832031 8.85773 0.941609 9.05228 1.13659L14.252 6.35207C14.6577 6.75791 14.6577 7.41409 14.252 7.81988L9.04418 13.0277C8.63835 13.4335 7.9822 13.4335 7.57636 13.0277C7.17054 12.6218 7.17054 11.9578 7.57636 11.5519L11.006 8.12228H1.78244C1.20973 8.12228 0.742188 7.65474 0.742188 7.08203C0.742188 6.50931 1.20973 6.04177 1.78244 6.04177H11.0078L7.58427 2.6042C7.17856 2.19838 7.17847 1.54225 7.58421 1.13645ZM8.31817 1.33203C8.17554 1.33203 8.03876 1.38878 7.93802 1.48975C7.72745 1.70031 7.72725 2.04008 7.93782 2.25065L12.2114 6.54177H1.78244C1.48587 6.54177 1.24219 6.78546 1.24219 7.08203C1.24219 7.37859 1.48587 7.62228 1.78244 7.62228H12.2131L7.92992 11.9055C7.71935 12.1161 7.71935 12.4635 7.92992 12.6741C8.14049 12.8847 8.48006 12.8847 8.69062 12.6741L13.8984 7.46633C14.109 7.25576 14.109 6.91619 13.8984 6.70562L8.69833 1.48975C8.59759 1.38882 8.46078 1.33203 8.31817 1.33203Z" fill="white"></path>
                             </svg>
                         </button>
                     </a>
+                    <script>
+
+                            // With the above scripts loaded, you can call `tippy()` with a CSS
+                                    // selector and a `content` prop:
+                                    tippy('#download-intro', {
+                                        content: 'Go to the download page',
+                                        animation: "shift-away",
+                                        placement: 'right',
+                                    });
+            
+                    </script>
+                    
                 </div>
             </div>
             <div class="lf-home-hero-illus-lottie mx-auto">
@@ -137,7 +319,7 @@
                         <h2 class="text-4xl sm:text-5xl font-normal font-lf-bold text-grey-darkest mb-6">Play the Demo</h2>
                         <p class="text-lg sm:text-xl text-grey-dark leading-normal mb-6">Play the Demo version of the game consisting of only one version of The Ruins. If you liked the mod, then you can <a href="/download.html" class="text-lf-teal-dark-3 trans hover:text-lf-teal">download</a> it</p>
                         <div class="flex md:block justify-center mb-10">
-                            <a href="/demo.html" class="hover-link getting_started_button">
+                            <a href="/demo.html" id="demo-intro" class="hover-link getting_started_button">
                                 <button class="bg-lf-teal text-base trans hover:bg-lf-teal-dark-3 hover:shadow-lg-teal sm:text-lg text-white rounded-md py-4 px-8 sm:py-5 sm:px-16"><span class="font-lf-bold">Demo</span>
                                     <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.78244 7.87228H11.6096L7.75314 11.7287C7.44494 12.0369 7.44494 12.5427 7.75314 12.8509C8.06134 13.1591 8.5592 13.1591 8.8674 12.8509L14.0752 7.64311C14.3834 7.33491 14.3834 6.83705 14.0752 6.52885L8.8753 1.31317C8.72766 1.16519 8.52721 1.08203 8.31817 1.08203C8.10914 1.08203 7.90869 1.16519 7.76104 1.31317C7.45285 1.62137 7.45285 2.11923 7.76104 2.42743L11.6096 6.29177H1.78244C1.3478 6.29177 0.992188 6.64739 0.992188 7.08203C0.992188 7.51667 1.3478 7.87228 1.78244 7.87228Z" fill="white"></path>
@@ -146,6 +328,17 @@
                                 </button>
                             </a>
                         </div>
+                        <script>
+
+                            // With the above scripts loaded, you can call `tippy()` with a CSS
+                                    // selector and a `content` prop:
+                                    tippy('#demo-intro', {
+                                        content: 'Go to the Demo page',
+                                        animation: "shift-away",
+                                        placement: 'right',
+                                    });
+            
+                    </script>
                     </div>
                     <div class="lf-home-comparisons mb-10 lg:mb-0 relative flex-no-shrink pin-l pin-t flex items-center justify-center lg:justify-start h-full overflow-hidden">
                         <div class="flex items-end">
@@ -207,6 +400,7 @@
                             allowHTML: true,
                             animation: "shift-away",
                             theme: 'discord',
+                            interactive: true,
                         });
 
 </script>
@@ -220,6 +414,7 @@
                 allowHTML: true,
                 animation: "shift-away",
                 theme: 'discord',
+                interactive: true,
             });
 </script>
 
@@ -349,5 +544,10 @@
     }
 
 </script>
+<!-- Development version -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+<!-- Production version -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 </body>
 </html>
