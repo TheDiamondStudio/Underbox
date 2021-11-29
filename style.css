@@ -188,13 +188,24 @@ blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,p,pre {
 button {
 	background: transparent;
 	padding: 0;
+	transform: translate3d(0px, 0px, 0px);
+	transition-duration: 33ms;
 }
 
 button:focus {
-	outline: 1px dotted;
+	outline: 10px dotted;
 	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: 5px;
 }
-
+#telegram:focus {
+	outline: none;
+}
+#youtube:focus {
+	outline: none;
+}
+#discord:focus {
+	outline: none;
+}
 fieldset {
 	margin: 0;
 	padding: 0;
@@ -5663,9 +5674,7 @@ body.modal-active {
 	display: block;
 }
 
-button:focus {
-	outline: none;
-}
+
 
 svg {
 	fill: currentColor;
