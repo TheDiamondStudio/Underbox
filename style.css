@@ -190,10 +190,12 @@ button {
 	padding: 0;
 	transform: translate3d(0px, 0px, 0px);
 	transition-duration: 33ms;
+	outline: 4px solid #00000000;
+	outline-offset: -0px;
 }
 
 button:focus {
-	outline: 4px solid  -webkit-focus-ring-color;
+	outline: 4px solid #000000be;
 	outline-offset: 3px;
 }
 #telegram:focus {
