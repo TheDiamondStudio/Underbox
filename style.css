@@ -10,6 +10,7 @@
 	--text-grey-dark: #8795a1;
 	--text-grey-darker: #606f7b;
 	--coming-soon: #4ab0fd;
+	--font-family: 'Montserrat';
 }
 
 .trans {
@@ -37,7 +38,7 @@ body {
 	margin: 0;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-family), sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -98,7 +99,7 @@ img {
 }
 
 button,input,select,textarea {
-	font-family: inherit;
+	font-family: var(--font-family);
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -186,7 +187,7 @@ summary {
 html {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: var(--font-family);
 }
 
 *,:after,:before {
@@ -1074,32 +1075,32 @@ table {
 }
 
 .font-lf-bold {
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-family), sans-serif;
 	font-weight: 700;
 }
 
 .font-lf-semi-bold {
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-family), sans-serif;
 	font-weight: 600;
 }
 
 .font-lf-extra-bold {
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-family), sans-serif;
 	font-weight: 800;
 }
 
 .font-lf-light {
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-family), sans-serif;
 	font-weight: 400;
 }
 
 .font-lf-regular {
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-family), sans-serif;
 	font-weight: 400;
 }
 
 .hover\:font-lf-bold:hover {
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-family), sans-serif;
 	font-weight: 700;
 }
 
@@ -5844,8 +5845,8 @@ a {
 	letter-spacing: -.01em;
 }
 
-.markdown-body h1,.markdown-body h2,.markdown-body h3 {
-	font-family: averta_stdbold;
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+	font-family: var(--font-family);
 }
 
 .lf-heading-3 {
@@ -5854,7 +5855,7 @@ a {
 
 .lf-heading-3 {
 	color: #3d4852;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 }
 
 .lf-heading-5 {
@@ -5863,11 +5864,11 @@ a {
 
 .lf-heading-5 {
 	color: #3d4852;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 }
 
 .markdown-body p {
-	font-family: averta_stdregular;
+	font-family: var(--font-family);
 }
 
 .dropdown-toggle {
@@ -5888,7 +5889,7 @@ a {
 	padding: 1rem 4rem;
 	color: #fff;
 	font-size: 1.125rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 	cursor: url(b29e2c9003414c489f579191d6bf72fc4SKnplZ09CkaI1h0-0.png), pointer !important;
 }
 
@@ -5909,7 +5910,7 @@ a {
 	padding: .75rem 4rem;
 	color: #fff;
 	font-size: 1.125rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 	cursor: url(b29e2c9003414c489f579191d6bf72fc4SKnplZ09CkaI1h0-0.png), pointer !important;
 }
 
@@ -5931,7 +5932,7 @@ a {
 	padding: .5rem 1.5rem;
 	color: #fff;
 	font-size: 1rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 	cursor: url(b29e2c9003414c489f579191d6bf72fc4SKnplZ09CkaI1h0-0.png), pointer !important;
 }
 
@@ -5953,7 +5954,7 @@ a {
 	padding: 1rem 4rem;
 	color: #22292f;
 	font-size: 1.125rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 	cursor: url(b29e2c9003414c489f579191d6bf72fc4SKnplZ09CkaI1h0-0.png), pointer !important;
 }
 
@@ -5962,7 +5963,7 @@ a {
 	color: #fff;
 }
 
-.lf-button-md,.lf-button-white {
+.lf-button-md, .lf-button-white {
 	-webkit-transition: all .25s;
 	transition: all .25s;
 	margin-left: auto;
@@ -5975,7 +5976,7 @@ a {
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 	padding: .75rem 2.5rem;
 	font-size: 1.125rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 	cursor: url(b29e2c9003414c489f579191d6bf72fc4SKnplZ09CkaI1h0-0.png), pointer !important;
 }
 
@@ -6013,7 +6014,7 @@ a {
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 	color: #22292f;
 	font-size: 1.125rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 	cursor: url(b29e2c9003414c489f579191d6bf72fc4SKnplZ09CkaI1h0-0.png), pointer !important;
 }
 
@@ -6038,7 +6039,7 @@ a {
 	padding: .75rem 2.5rem;
 	color: #018889;
 	font-size: 1.125rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 	cursor: url(b29e2c9003414c489f579191d6bf72fc4SKnplZ09CkaI1h0-0.png), pointer !important;
 }
 
@@ -6062,7 +6063,7 @@ a {
 	padding: .75rem 1.5rem;
 	color: #606f7b;
 	font-size: .75rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 	cursor: url(b29e2c9003414c489f579191d6bf72fc4SKnplZ09CkaI1h0-0.png), pointer !important;
 }
 
@@ -6088,7 +6089,7 @@ a {
 	display: inline-block;
 	color: #fff;
 	font-size: 1.125rem;
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 }
 
 .lf-button-simple {
@@ -6097,7 +6098,7 @@ a {
 	border-radius: .5rem;
 	-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-	font-family: averta_stdbold;
+	font-family: var(--font-family);
 }
 
 .lf-button-simple {
@@ -6472,7 +6473,7 @@ div.ad a:hover {
 }
 
 .cookie-consent__message {
-	font-family: averta_stdregular;
+	font-family: var(--font-family);
 }
 
 #lf-range {
@@ -7326,7 +7327,7 @@ input:checked+.lf-switch-slider:before {
 	}
 
 	.sm\:font-lf-regular {
-		font-family: averta_stdregular;
+		font-family: var(--font-family);
 	}
 
 	.sm\:h-8 {
@@ -7896,11 +7897,11 @@ input:checked+.lf-switch-slider:before {
 	}
 
 	.md\:font-lf-bold {
-		font-family: averta_stdbold;
+		font-family: var(--font-family);
 	}
 
 	.md\:font-lf-semi-bold {
-		font-family: averta_stdsemibold;
+		font-family: var(--font-family);
 	}
 
 	.md\:h-6 {
