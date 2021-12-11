@@ -1,4 +1,17 @@
 
+:root {
+	--bg: #fafafa;
+	--bg-btn: #4ab0fd;
+	--btn-focus: #000000be;
+	--bg-btn-hover: #3869ac;
+	--text-header: #606f7b;
+	--text: #22292f;
+	--text-grey-darkest: #3d4852;
+	--text-grey-dark: #8795a1;
+	--text-grey-darker: #606f7b;
+	--coming-soon: #4ab0fd;
+}
+
 .trans {
 	-webkit-transition: all .25s;
 	transition: all .25s;
@@ -28,7 +41,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
-	background: #fff;
+	background: var(--bg);
 	margin-top: 72px;
 }
 main {
@@ -195,7 +208,7 @@ button {
 }
 
 button:focus {
-	outline: 4px solid #000000be;
+	outline: 4px solid var(--btn-focus);
 	outline-offset: 3px;
 }
 #telegram:focus {
@@ -341,7 +354,7 @@ table {
 }
 
 .bg-white {
-	background-color: #fff;
+	background-color: var(--bg);
 }
 
 .bg-red {
@@ -393,7 +406,7 @@ table {
 }
 
 .bg-lf-teal-lightest {
-	background-color: #d7fafb;
+	background-color: var(--bg-btn);
 }
 
 .bg-lf-teal-light,.bg-lf-teal-lighter {
@@ -413,7 +426,7 @@ table {
 }
 
 .bg-lf-bg {
-	background-color: #fafafa;
+	background-color: var(--bg);
 }
 
 .bg-lf-orange-lightest {
@@ -497,9 +510,14 @@ table {
 }
 
 .hover\:bg-lf-teal-dark-3:hover {
-	background-color: #3869ac;
+	background-color: var(--bg-btn-hover);
 }
-
+.moneydealer {
+	transition: all 0.5s;
+}
+.bg-lf-teal:hover .moneydealer {
+	transform: translateX(5px);
+}
 .hover\:bg-lf-teal-dark:hover {
 	background-color: #3869ac;
 }
@@ -593,7 +611,7 @@ table {
 }
 
 .border-grey-lighter {
-	border-color: #f1f5f8;
+	border-color: var(--bg);
 }
 
 .border-grey-lightest {
@@ -2383,7 +2401,7 @@ table {
 }
 
 .text-black {
-	color: #22292f;
+	color: var(--text);
 }
 
 .text-black-lighter {
@@ -2391,15 +2409,15 @@ table {
 }
 
 .text-grey-darkest {
-	color: #3d4852;
+	color: var(--text-grey-darkest);
 }
 
 .text-grey-darker {
-	color: #606f7b;
+	color: var(--text-grey-darker);
 }
 
 .text-grey-dark {
-	color: #8795a1;
+	color: var(--text-grey-dark);
 }
 
 .text-grey {
@@ -2467,7 +2485,7 @@ table {
 }
 
 .text-lf-teal {
-	color: #4ab0fd;
+	color: var(--coming-soon);
 }
 
 .text-lf-teal-dark-0 {
@@ -4085,13 +4103,13 @@ table {
 }
 
 .lf-header nav .nav-list-item {
-	border-top: 2px solid #fafafa;
+	border-top: 2px solid var(--bg);
 }
 
 @media (min-width:768px) {
 	.lf-header nav .nav-list-item {
 		border-top: none;
-		border-bottom: 2px solid #fafafa;
+		border-bottom: 2px solid var(--bg);
 		padding-bottom: 34px;
         transition: all 0.5s;
 	}
