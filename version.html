@@ -3,15 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZKQVPXKWF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HZKQVPXKWF');
-</script>
+        
      <!-- Development -->
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
 <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
@@ -62,69 +54,77 @@
 			</div>
 			<div class="flex z-10 flex-col-reverse justify-end items-end w-full nav-container bg-lf-bg pin-l pin-t pin-b md:flex-row md:items-center">
 				<nav class="self-end w-full sm:ml-16">
-					<ul class="flex flex-col justify-center items-center nav-list list-reset md:flex-row">
-						
-                        <a href="download.html" id="download"  class="hover-link nav-orange nav-list-item nav-list-item-0 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
-							<div onclick="toggleMenuNav(0)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0"><span class="mr-2 text-base nav-title">Download</span>
-							</div>
-						</a>
+                    <ul class="flex flex-col justify-center items-center nav-list list-reset md:flex-row">
+
+                        <a href="download.html" id="download" class="hover-link nav-orange nav-list-item nav-list-item-0 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
+                            <div onclick="toggleMenuNav(0)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0">
+                                <span class="mr-2 text-base nav-title">Download</span>
+                            </div>
+                        </a>
 
                         <script>
                             // With the above scripts loaded, you can call `tippy()` with a CSS
-                                    // selector and a `content` prop:
-                                    tippy('#download', {
-                                        content: 'Here you can download Underbox V1.',
-                                        animation: "shift-away",
-                                    });
-            
+                            // selector and a `content` prop:
+                            tippy('#download', {
+                                content: 'Here you can download Underbox V1.',
+                                animation: "shift-away",
+                                delay: [800, 0], // ms
+                            });
+
                         </script>
-                        
+
                         <a href="demo.html" id="demo" class="hover-link nav-green nav-list-item nav-list-item-1 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
-							<div onclick="toggleMenuNav(1)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0"><span class="mr-2 text-base nav-title">Demo</span>
-							</div>
-						</a>
+                            <div onclick="toggleMenuNav(1)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0">
+                                <span class="mr-2 text-base nav-title">Demo</span>
+                            </div>
+                        </a>
 
                         <script>
                             // With the above scripts loaded, you can call `tippy()` with a CSS
-                                    // selector and a `content` prop:
-                                    tippy('#demo', {
-                                        content: 'Play the Demo version of Underbox in your browser.',
-                                        animation: "shift-away",
-                                    });
-            
+                            // selector and a `content` prop:
+                            tippy('#demo', {
+                                content: 'Play the Demo version of Underbox in your browser.',
+                                animation: "shift-away",
+                                delay: [800, 0], // ms
+                            });
+
                         </script>
-                        
+
                         <a href="version.html" id="version" class="hover-link nav-blue nav-list-item nav-list-item-2 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
-							<div onclick="toggleMenuNav(2)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0"><span class="mr-2 text-base nav-title">Versions</span>
-							</div>
-						</a>
+                            <div onclick="toggleMenuNav(2)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0">
+                                <span class="mr-2 text-base nav-title">Versions</span>
+                            </div>
+                        </a>
 
                         <script>
                             // With the above scripts loaded, you can call `tippy()` with a CSS
-                                    // selector and a `content` prop:
-                                    tippy('#version', {
-                                        content: 'Do you want to know which versions are available in Underbox?This link is for you.',
-                                        animation: "shift-away",
-                                    });
-            
+                            // selector and a `content` prop:
+                            tippy('#version', {
+                                content: 'Do you want to know which versions are available in Underbox?This link is for you.',
+                                animation: "shift-away",
+                                delay: [800, 0], // ms
+                            });
+
                         </script>
 
                         <a href="https://www.donationalerts.com/r/diamond1895" id="donat" class="hover-link nav-purple nav-list-item nav-list-item-3 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
-							<div onclick="toggleMenuNav(3)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0"><span class="mr-2 text-base nav-title">Donat</span>
-							</div>
-						</a>
+                            <div onclick="toggleMenuNav(3)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0">
+                                <span class="mr-2 text-base nav-title">Donat</span>
+                            </div>
+                        </a>
 
                         <script>
                             // With the above scripts loaded, you can call `tippy()` with a CSS
-                                    // selector and a `content` prop:
-                                    tippy('#donat', {
-                                        content: 'Donate to the creator of the site.',
-                                        animation: "shift-away",
-                                    });
-            
+                            // selector and a `content` prop:
+                            tippy('#donat', {
+                                content: 'Donate to the creator of the site.',
+                                animation: "shift-away",
+                                delay: [800, 0], // ms
+                            });
+
                         </script>
-                          
-					</ul>
+
+                    </ul>
 				</nav>
 				<div class="absolute pin-t p-4 pr-0 m-nav-container flex items-center -mr-3 md:relative md:p-0">
 					<div class="md:hidden justify-center items-center p-1 mx-1 m-nav-search">
