@@ -151,46 +151,80 @@
 		</div>
 	</header>
 </div>
-<div id="plugin-landing " class="lf-padding container mx-auto">
-    
-	<div class="py-32">
-		<h1 class="font-lf-bold text-5xl leading-lf md:text-7xl text-center">Download<br><span class="text-lf-teal"> Ruins V1</span></h1>
-		<h2 class="text-grey-dark font-normal w-2/3 leading-normal mx-auto md:w-full font-lf-regular text-2xl md:text-3xl text-center py-4">
-            Did you like the mod?<br>Download it faster!</h2>
-        </div>
-        <div class="w-full z-10 pin-b pin-l px-5 lg:px-0">
-            <div class="container mx-auto">
-                <div class="flex flex-col items-center pb-16">
-                    <a href="https://drive.google.com/file/d/1-9WtdYC0XJs--anR4vidwsW457fBu6_p/view?usp=sharing">
-                        <button class="hover-link bg-lf-teal text-xl text-white h-16 rounded-md px-12 lg:px-10 trans hover:bg-lf-teal-dark-3 hover:shadow-lg-teal"><span class="font-lf-semi-bold">Download on Google Drive</span>
-                            <svg class="moneydealer" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.78244 7.87228H11.6096L7.75314 11.7287C7.44494 12.0369 7.44494 12.5427 7.75314 12.8509C8.06134 13.1591 8.5592 13.1591 8.8674 12.8509L14.0752 7.64311C14.3834 7.33491 14.3834 6.83705 14.0752 6.52885L8.8753 1.31317C8.72766 1.16519 8.52721 1.08203 8.31817 1.08203C8.10914 1.08203 7.90869 1.16519 7.76104 1.31317C7.45285 1.62137 7.45285 2.11923 7.76104 2.42743L11.6096 6.29177H1.78244C1.3478 6.29177 0.992188 6.64739 0.992188 7.08203C0.992188 7.51667 1.3478 7.87228 1.78244 7.87228Z" fill="white"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58421 1.13645C7.77874 0.941555 8.0428 0.832031 8.31817 0.832031C8.59361 0.832031 8.85773 0.941609 9.05228 1.13659L14.252 6.35207C14.6577 6.75791 14.6577 7.41409 14.252 7.81988L9.04418 13.0277C8.63835 13.4335 7.9822 13.4335 7.57636 13.0277C7.17054 12.6218 7.17054 11.9578 7.57636 11.5519L11.006 8.12228H1.78244C1.20973 8.12228 0.742188 7.65474 0.742188 7.08203C0.742188 6.50931 1.20973 6.04177 1.78244 6.04177H11.0078L7.58427 2.6042C7.17856 2.19838 7.17847 1.54225 7.58421 1.13645ZM8.31817 1.33203C8.17554 1.33203 8.03876 1.38878 7.93802 1.48975C7.72745 1.70031 7.72725 2.04008 7.93782 2.25065L12.2114 6.54177H1.78244C1.48587 6.54177 1.24219 6.78546 1.24219 7.08203C1.24219 7.37859 1.48587 7.62228 1.78244 7.62228H12.2131L7.92992 11.9055C7.71935 12.1161 7.71935 12.4635 7.92992 12.6741C8.14049 12.8847 8.48006 12.8847 8.69062 12.6741L13.8984 7.46633C14.109 7.25576 14.109 6.91619 13.8984 6.70562L8.69833 1.48975C8.59759 1.38882 8.46078 1.33203 8.31817 1.33203Z" fill="white"></path>
-                            </svg>
-                        </button>
-                    </a>
+        <div id="plugin-landing " class="lf-padding container mx-auto">
+
+            
+            
+            
+            <div class="container mx-auto py-20 flex flex-col md:flex-row relative" style="align-items: center; justify-content: space-evenly; ">
+                <div class="w-full md:w-1/2 px-5 md:px-0">
+                    
+                    <h1 class="text-center text-4xl md:text-left md:text-6xl font-lf-bold text-black mb-6 md:mb-10">
+                        Here you can<br>download<br>Underbox V1.
+                    </h1>
+                    <p class="text-center mb-8 text-xl md:text-2xl md:text-left font-lf-regular text-grey-darker md:mb-10 leading-normal">
+                        You liked the mod,<br> then download it soon!
+                    </p>
+                    <div class="-mx-3  md:flex md:flex-col lg:flex-row">
+                        <div class="flex md:block justify-center mb-10">
+                            <a href="https://drive.google.com/file/d/1-9WtdYC0XJs--anR4vidwsW457fBu6_p/view?usp=sharing" class="getting_started_button">
+                                <button id="download-intro" class="hover-link bg-lf-teal text-base trans hover:bg-lf-teal-dark-3  sm:text-lg text-white rounded-md py-4 px-8 sm:py-5 sm:px-16">
+                                    <span class="font-lf-bold">Download on Google Drive</span>
+                                    <svg class="moneydealer" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.78244 7.87228H11.6096L7.75314 11.7287C7.44494 12.0369 7.44494 12.5427 7.75314 12.8509C8.06134 13.1591 8.5592 13.1591 8.8674 12.8509L14.0752 7.64311C14.3834 7.33491 14.3834 6.83705 14.0752 6.52885L8.8753 1.31317C8.72766 1.16519 8.52721 1.08203 8.31817 1.08203C8.10914 1.08203 7.90869 1.16519 7.76104 1.31317C7.45285 1.62137 7.45285 2.11923 7.76104 2.42743L11.6096 6.29177H1.78244C1.3478 6.29177 0.992188 6.64739 0.992188 7.08203C0.992188 7.51667 1.3478 7.87228 1.78244 7.87228Z" fill="white"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58421 1.13645C7.77874 0.941555 8.0428 0.832031 8.31817 0.832031C8.59361 0.832031 8.85773 0.941609 9.05228 1.13659L14.252 6.35207C14.6577 6.75791 14.6577 7.41409 14.252 7.81988L9.04418 13.0277C8.63835 13.4335 7.9822 13.4335 7.57636 13.0277C7.17054 12.6218 7.17054 11.9578 7.57636 11.5519L11.006 8.12228H1.78244C1.20973 8.12228 0.742188 7.65474 0.742188 7.08203C0.742188 6.50931 1.20973 6.04177 1.78244 6.04177H11.0078L7.58427 2.6042C7.17856 2.19838 7.17847 1.54225 7.58421 1.13645ZM8.31817 1.33203C8.17554 1.33203 8.03876 1.38878 7.93802 1.48975C7.72745 1.70031 7.72725 2.04008 7.93782 2.25065L12.2114 6.54177H1.78244C1.48587 6.54177 1.24219 6.78546 1.24219 7.08203C1.24219 7.37859 1.48587 7.62228 1.78244 7.62228H12.2131L7.92992 11.9055C7.71935 12.1161 7.71935 12.4635 7.92992 12.6741C8.14049 12.8847 8.48006 12.8847 8.69062 12.6741L13.8984 7.46633C14.109 7.25576 14.109 6.91619 13.8984 6.70562L8.69833 1.48975C8.59759 1.38882 8.46078 1.33203 8.31817 1.33203Z" fill="white"></path>
+                                    </svg>
+                                </button>
+                            </a>
+                            <!-- <script>
+
+                        // With the above scripts loaded, you can call `tippy()` with a CSS
+                                // selector and a `content` prop:
+                                tippy('#download-intro', {
+                                    content: 'Go to the download page',
+                                    animation: "shift-away",
+                                });
+
+                </script> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                    <div class="lf-home-comparisons mb-10 lg:mb-0 relative flex-no-shrink pin-l pin-t flex items-center justify-center lg:justify-start h-full overflow-hidden">
+                        <div class="flex items-end">
+                            <div class="mx-1 sm:mx-2">
+                                <div class="lottie w-full rounded-lg sm:rounded-2xl shadow-md border-lf-teal mb-3" style="background: url(https://thediamondstudio.github.io/Underbox/assets/homescreen-hd.jpg) center no-repeat;-webkit-background-size: cover;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white px-5 md:px-0">
+                    <footer class="container mx-auto py-12 border-t border-grey-lighter">
+                        <div class="flex flex-col sm:flex-row sm:items-end">
+                            <div class="w-full mb-6 sm:w-1/3">
+                                <p class="text-sm text-grey-dark leading-normal">TheDiamondStudio website creator</p>
+                                <p class="text-sm text-grey-dark leading-normal">Copyright © 2021 Underbox. All rights reserved.</p>
+                            </div>
+                            <div class="w-full mb-6 sm:w-1/3 sm:text-center">
+
+                            </div>
+                            <div class="w-full mb-6 sm:w-1/3 flex sm:justify-end">
+                                <button id="telegram" class="hover-link" onclick="window.open('https://t.me/Underbox0')">
+                                    <img class="trans mi-deti-morgenshterna" src="https://tabler-icons.io/static/tabler-icons/icons/brand-telegram.svg">
+                                    <button id="youtube" class="hover-link px-3" onclick="window.open('https://www.youtube.com/channel/UCeJTrmHQwwDXew_jBJXdmuw')">
+                                        <img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-youtube.svg">
+                                        <button id="discord" class="hover-link" onclick="window.open('https://discord.com/invite/mEb73gN6Dv')">
+                                            <img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-discord.svg">
+                                        </button>
+                            </div>
+                    </footer>
                 </div>
             </div>
-        </div>
-        <div class="bg-white px-5 md:px-0">
-            <footer class="container mx-auto py-12 border-t border-grey-lighter">
-                <div class="flex flex-col sm:flex-row sm:items-end">
-                    <div class="w-full mb-6 sm:w-1/3">
-                        <p class="text-sm text-grey-dark leading-normal">TheDiamondStudio website creator</p>
-                        <p class="text-sm text-grey-dark leading-normal">Copyright © 2021 Underbox. All rights reserved.</p>
-                    </div>
-                    <div class="w-full mb-6 sm:w-1/3 sm:text-center">
-                        
-                    </div>
-                    <div class="w-full mb-6 sm:w-1/3 flex sm:justify-end">
-                        <button id="telegram" class="hover-link" onclick="window.open('https://t.me/Underbox0')"><img class="trans mi-deti-morgenshterna" src="https://tabler-icons.io/static/tabler-icons/icons/brand-telegram.svg">    
-                        <button id="youtube" class="hover-link px-3" onclick="window.open('https://www.youtube.com/channel/UCeJTrmHQwwDXew_jBJXdmuw')"><img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-youtube.svg">
-                       <button id="discord" class="hover-link"  onclick="window.open('https://discord.com/invite/mEb73gN6Dv')"><img class="trans mi-deti-morgenshterna" src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/brand-discord.svg">
-                        </button>
-                        </div>
-            </footer>
-        </div>
-    </div>
     <script>
         tippy('#telegram', {
             content: 'Go to our Telegram channel where news about the project and so on are posted.',

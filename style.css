@@ -212,13 +212,13 @@ button:focus {
 	box-shadow: 0 0 0 0.3rem rgb(0 123 255 / 31%);
 }
 #telegram:focus {
-	outline: none;
+	box-shadow: 0 0 0 0.3rem rgb(0 123 255 / 0%);
 }
 #youtube:focus {
-	outline: none;
+	box-shadow: 0 0 0 0.3rem rgb(0 123 255 / 0%);
 }
 #discord:focus {
-	outline: none;
+	box-shadow: 0 0 0 0.3rem rgb(0 123 255 / 0%);
 }
 fieldset {
 	margin: 0;
