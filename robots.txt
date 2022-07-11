@@ -1,0 +1,4 @@
+Sitemap: https://thediamondstudio.github.io/Underbox/sitemap.xml
+
+User-agent: *
+Disallow:
