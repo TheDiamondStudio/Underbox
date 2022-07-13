@@ -5,6 +5,7 @@
 <!-- Yandex.RTB -->
 <script>window.yaContextCb=window.yaContextCb||[]</script>
 <script src="https://yandex.ru/ads/system/context.js" async></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11">
      <!-- Development -->
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
@@ -108,9 +109,23 @@
                             });
 
                         </script>
-
+			
                         <a href="https://www.donationalerts.com/r/diamond1895" id="donat" class="hover-link nav-purple nav-list-item nav-list-item-3 w-full cursor-pointer md:w-auto md:px-2 xl:px-4 md:py-3 text-grey-darker">
-                            <div onclick="toggleMenuNav(3)" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0">
+                            <div onclick="Swal.fire({
+  title: 'Donat',
+  icon: 'info',
+  html:
+    '<iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=Support%20the%20creator%20of%20the%20site&default-sum=100&button-text=13&payment-type-choice=on&successURL=&quickpay=shop&account=410018359278481&" width="423" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up"></i> Great!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down"></i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})" class="flex justify-between items-center py-3 px-5 w-full md:py-0 md:px-0">
                                 <span class="mr-2 text-base nav-title">Donat</span>
                             </div>
                         </a>
