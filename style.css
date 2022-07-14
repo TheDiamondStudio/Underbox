@@ -9117,7 +9117,7 @@ input:checked+.lf-switch-slider:before {
 @media (max-width: 985px) {
 	.tgme_page_widget {
 		
-		display: flex;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 		justify-content: center;
 		flex-direction: column;
 		flex-wrap: wrap;
