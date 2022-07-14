@@ -9109,7 +9109,7 @@ input:checked+.lf-switch-slider:before {
     max-width: 100%;
 }
 .tgme_page_widget {
-	display: flex;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	align-content: center;
     justify-content: center;
 
