@@ -1,1 +1,19 @@
-https://thediamondstudio.github.io/Underbox/index.html https://thediamondstudio.github.io/Underbox/download.html https://thediamondstudio.github.io/Underbox/demo.html https://thediamondstudio.github.io/Underbox/version.html
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://thediamondstudio.github.io/Underbox</loc>
+  </url>
+
+  <url>
+    <loc>https://thediamondstudio.github.io/Underbox/download.html</loc>
+  </url>
+
+  <url>
+    <loc>https://thediamondstudio.github.io/Underbox/demo.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://thediamondstudio.github.io/Underbox/version.html</loc>
+  </url>
+</urlset>
