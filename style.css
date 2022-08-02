@@ -1,15 +1,15 @@
 
 :root {
 	--bg: #fafafa;
-	--bg-btn: #4ab0fd;
-	--header-btn: #4ab0fd;
+	--bg-btn: #be3efb;
+	--header-btn: #be3efb;
 	--bg-btn-hover: #3869ac;
 	--text-header: #606f7b;
 	--text: #22292f;
 	--text-grey-darkest: #3d4852;
 	--text-grey-dark: #8795a1;
 	--text-grey-darker: #606f7b;
-	--coming-soon: #4ab0fd;
+	--coming-soon: #be3efb;
 	--font-family: 'Montserrat';
 }
 
@@ -418,7 +418,7 @@ table {
 }
 
 .bg-lf-teal {
-	background-color: #4ab0fd;
+	background-color: var(--bg-btn);
 }
 
 .bg-lf-teal-new {
