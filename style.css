@@ -4,6 +4,7 @@
 	--bg-btn: #be3efb;
 	--header-btn: #be3efb;
 	--bg-btn-hover: #8032a6;
+	--btn-focus: 0 0 0 0.3rem #be3efb5e;
 	--text-header: #606f7b;
 	--text: #22292f;
 	--text-grey-darkest: #3d4852;
@@ -209,7 +210,7 @@ button {
 }
 
 button:focus {
-	box-shadow: 0 0 0 0.3rem rgb(0 123 255 / 31%);
+	box-shadow: var(--btn-focus);
 }
 #telegram:focus {
 	box-shadow: 0 0 0 0.3rem rgb(0 123 255 / 0%);
