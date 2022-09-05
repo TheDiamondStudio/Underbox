@@ -265,6 +265,7 @@ body.miniPlayer #home #home-bt-album,
 body.miniPlayer #home #home-bt-info,
 body.miniPlayer #home #home-bt-list,
 body.miniPlayer #home #home-bt-param,
+body.miniPlayer #home #home-bt-fs,
 body.miniPlayer #watch-info {
 	display: none
 }
@@ -1206,7 +1207,8 @@ body.miniPlayer #lock-pause .bt .bck {
 }
 
 .bt#home-bt-info,
-.bt#home-bt-param {
+.bt#home-bt-param,
+.bt#home-bt-fs {
 	top: 44px;
 	right: 44px;
 	width: 44px;
@@ -1222,13 +1224,17 @@ body.miniPlayer #lock-pause .bt .bck {
 .bt#home-bt-info {
 	right: 103px
 }
-
+.bt#home-bt-fs {
+	right:162px
+}
 .bt#home-bt-info .bck,
+.bt#home-bt-fs .bck,
 .bt#home-bt-param .bck {
 	line-height: 0
 }
 
 #home-bt-info.animate,
+#home-bt-fs.animate,
 #home-bt-param.animate {
 	-webkit-animation: m .3s cubic-bezier(.175, .885, .32, 1.275) 0s forwards;
 	animation: m .3s cubic-bezier(.175, .885, .32, 1.275) 0s forwards
@@ -6261,6 +6267,7 @@ input[type=text].invalid {
 .expo #home-bt-album,
 .expo #home-bt-list,
 .expo #home-bt-param,
+.expo #home-bt-fs,
 .expo #home-bt-switch,
 .expo #pop-follow,
 .expo #tab-follow {
@@ -6395,6 +6402,7 @@ body.mobile .bt#home-bt-switch .bck .bckimg {
 }
 
 body.mobile .bt#home-bt-info,
+body.mobile .bt#home-bt-fs,
 body.mobile .bt#home-bt-param {
 	right: 44px;
 	width: 60px;
@@ -6405,6 +6413,9 @@ body.mobile .bt#home-bt-info {
 	right: 119px
 }
 
+body.mobile .bt#home-bt-fs {
+	right: 196px
+}
 body.mobile #mixlist {
 	-webkit-transform-origin: center bottom;
 	transform-origin: center bottom
